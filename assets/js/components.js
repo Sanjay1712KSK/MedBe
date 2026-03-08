@@ -38,7 +38,7 @@ class Footer extends HTMLElement {
                               <li><a href="index.html">Home</a></li>
                               <li><a href="about.html">About Us</a></li>
                               <li><a href="vision.html">Vision & Mission</a></li>
-                              <li><a href="#services">Our Services</a></li>
+                              <li><a href="index.html#services">Our Services</a></li>
                           </ul>
                       </div>
                       <div class="footer-col" id="contact">
