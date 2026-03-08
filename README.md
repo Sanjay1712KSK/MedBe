@@ -1,5 +1,5 @@
 # MedBe
 
-Developer: Sanjay K  
+Developer: Sanjay Kumar S
 Client: MedBe Pharmacy  
 Project Type: Pharmacy Website
