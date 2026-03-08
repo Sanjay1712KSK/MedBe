@@ -77,6 +77,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
@@ -86,6 +87,8 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <!-- Medical background particles -->
+        <div class="med-particles-canvas"></div>
         <div class="container">
             <div class="hero-content">
                 <span class="hero-tagline animate-fade-up" style="color: var(--white);">Your One-Stop Destination for
@@ -165,6 +168,37 @@
                     delivery services, we help patients receive genuine medicines and trusted healthcare support without
                     leaving their homes. Our approach focuses on improving health outcomes through patient education,
                     preventive healthcare awareness, and dependable pharmacy care right here in Ernakulam.</p>
+
+                <!-- Mission sequence animation -->
+                <div class="mission-sequence">
+                    <div class="mission-seq-step">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="7" width="20" height="10" rx="5" />
+                            <line x1="12" y1="7" x2="12" y2="17" />
+                        </svg>
+                        <span>Medicines</span>
+                    </div>
+                    <div class="mission-seq-arrow">&#8594;</div>
+                    <div class="mission-seq-step">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="7" width="20" height="13" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                            <line x1="12" y1="12" x2="12" y2="15" />
+                        </svg>
+                        <span>Delivery</span>
+                    </div>
+                    <div class="mission-seq-arrow">&#8594;</div>
+                    <div class="mission-seq-step">
+                        <svg class="heart-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                        <span>Patient Care</span>
+                    </div>
+                </div>
 
                 <!-- Local SEO Target: NAP (Name, Address, Phone) Consistency -->
                 <div class="nap-info"
@@ -258,6 +292,7 @@
 
     <!-- Parallax Statement -->
     <section class="parallax-section">
+        <div class="med-particles-canvas"></div>
         <div class="container parallax-content animate-fade-up">
             <h2>Your health matters to us.</h2>
             <p>Experience Care Beyond Medicine.</p>
@@ -329,9 +364,9 @@
     <!-- Call to Action -->
     <section class="cta-section">
         <div class="container cta-content">
-            <h2 class="animate-fade-up">Visit Me<span class="brand-db">db</span>e Pharmacy in Kochi Today</h2>
-            <p class="animate-fade-up delay-100">Your trusted partner for authentic medicines and reliable healthcare
-                support near you.</p>
+            <h2 class="animate-fade-up">Better Health Starts With Trusted Pharmacy Care</h2>
+            <p class="animate-fade-up delay-100">Experience reliable medicines, professional pharmacy guidance, and
+                convenient healthcare support with Me<span class="brand-db">db</span>e Pharmacy.</p>
             <div class="cta-buttons animate-fade-up delay-200">
                 <a href="#contact" class="btn btn-primary">Contact Us</a>
                 <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
@@ -346,6 +381,7 @@
     <!-- Scripts -->
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
 
 </html>

@@ -30,6 +30,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
@@ -46,98 +47,195 @@
     <section class="page-section">
         <div class="container">
 
-            <!-- Vision & Mission Cards -->
-            <div class="vm-cards">
-                <div class="vm-card animate-scale-in">
-                    <div class="vm-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
+            <!-- Vision & Mission Cards with floating medical icons -->
+            <div class="vm-section-wrapper">
+                <!-- Floating medical background icons -->
+                <div class="med-float-icon med-icon-1">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="2" y="7" width="20" height="10" rx="5" />
+                        <line x1="12" y1="7" x2="12" y2="17" />
+                    </svg>
+                </div>
+                <div class="med-float-icon med-icon-2">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                </div>
+                <div class="med-float-icon med-icon-3">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <div class="med-float-icon med-icon-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </div>
+                <div class="med-float-icon med-icon-5">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                </div>
+
+                <div class="vm-cards">
+                    <div class="vm-card animate-scale-in">
+                        <div class="vm-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h2>Our Vision</h2>
+                        <p>To make healthcare more accessible by delivering essential medicines, professional guidance,
+                            and
+                            wellness support directly to people's doorsteps. Me<span class="brand-db">db</span>e
+                            Pharmacy
+                            strives to extend pharmacy care beyond the counter, ensuring patients receive timely
+                            medicines,
+                            reliable information, and continuous support for better health.</p>
                     </div>
-                    <h2>Our Vision</h2>
-                    <p>To become the most trusted healthcare partner in Kochi by providing accessible medicines,
-                        reliable pharmaceutical services, and compassionate patient care across Ernakulam.</p>
-                </div>
 
-                <div class="vm-card animate-fade-up delay-200">
-                    <div class="vm-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 16 16 12 12 8"></polyline>
-                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                        </svg>
+                    <div class="vm-card animate-fade-up delay-200">
+                        <div class="vm-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 16 16 12 12 8"></polyline>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h2>Our Mission</h2>
+                        <p>To ensure patients receive genuine medicines and reliable pharmacy support at their doorstep
+                            through efficient home delivery services. Me<span class="brand-db">db</span>e Pharmacy is
+                            committed to improving health outcomes by providing clear medication guidance, promoting
+                            preventive healthcare awareness, and making pharmacy care more convenient and accessible for
+                            every family.</p>
                     </div>
-                    <h2>Our Mission</h2>
-                    <p>Our mission is to ensure every individual in our community has access to safe, authentic, and
-                        affordable
-                        healthcare products right here in Kochi, while receiving professional guidance that supports
-                        better health and
-                        wellbeing.</p>
+                </div><!-- /.vm-cards -->
+            </div><!-- /.vm-section-wrapper -->
+
+
+            <!-- Local SEO Target: NAP Consistency -->
+            <div class="nap-info"
+                style="margin: 60px 0 0; padding: 25px; background: rgba(96, 172, 56, 0.05); border-left: 4px solid var(--medbe-green); border-radius: 4px;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 15px;">Visit Our Pharmacy in Kochi</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                    <div>
+                        <p style="margin-bottom: 5px;"><strong>Me<span class="brand-db">db</span>e Pharmacy</strong></p>
+                        <p style="margin-bottom: 5px;">Tharun Tower, G-Floor, Sahodaran Ayyappan Rd<br>Kochi, Ernakulam,
+                            Kerala 682020</p>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;">Phone: <a href="tel:+919988446774"
+                                style="color: var(--medbe-green); text-decoration: none;">+91 99884 46774</a></p>
+                        <p style="margin-bottom: 10px;">Hours: Mon-Sat 9AM-11PM | Sun 10AM-10PM</p>
+                        <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--medbe-green); font-weight: 600; text-decoration: underline;">Get
+                            Directions
+                            on Google Maps</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Local SEO Target: NAP Consistency -->
-        <div class="nap-info"
-            style="margin: 60px 0 0; padding: 25px; background: rgba(96, 172, 56, 0.05); border-left: 4px solid var(--medbe-green); border-radius: 4px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">Visit Our Pharmacy in Kochi</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-                <div>
-                    <p style="margin-bottom: 5px;"><strong>Me<span class="brand-db">db</span>e Pharmacy</strong></p>
-                    <p style="margin-bottom: 5px;">Tharun Tower, G-Floor, Sahodaran Ayyappan Rd<br>Kochi, Ernakulam,
-                        Kerala 682020</p>
+            <!-- Core Values -->
+            <div style="margin-top: 60px;">
+                <div class="principles-header animate-fade-up">
+                    <h2>Our Core Values</h2>
+                    <p>The values that guide everything we do at Me<span class="brand-db">db</span>e Pharmacy.</p>
                 </div>
-                <div>
-                    <p style="margin-bottom: 5px;">Phone: <a href="tel:+919988446774"
-                            style="color: var(--medbe-green); text-decoration: none;">+91 99884 46774</a></p>
-                    <p style="margin-bottom: 10px;">Hours: Mon-Sat 9AM-11PM | Sun 10AM-10PM</p>
-                    <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--medbe-green); font-weight: 600; text-decoration: underline;">Get Directions
-                        on Google Maps</a>
+
+                <div class="principles-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <!-- Trust -->
+                    <div class="principle-card animate-fade-up delay-100"
+                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
+                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
+                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
+                        <div style="color: #60AC38; margin-bottom: 14px;">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Trust</h3>
+                        <p>Providing authentic medicines and dependable healthcare services.</p>
+                    </div>
+
+                    <!-- Care -->
+                    <div class="principle-card animate-fade-up delay-200"
+                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
+                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
+                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
+                        <div style="color: #60AC38; margin-bottom: 14px;">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Care</h3>
+                        <p>Putting patients first with compassion and responsible pharmacy practices.</p>
+                    </div>
+
+                    <!-- Access -->
+                    <div class="principle-card animate-fade-up delay-300"
+                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
+                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
+                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
+                        <div style="color: #60AC38; margin-bottom: 14px;">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Access</h3>
+                        <p>Making medicines and healthcare support easily available to everyone.</p>
+                    </div>
+
+                    <!-- Knowledge -->
+                    <div class="principle-card animate-fade-up delay-400"
+                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
+                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
+                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
+                        <div style="color: #60AC38; margin-bottom: 14px;">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3>Knowledge</h3>
+                        <p>Sharing clear and reliable medication guidance for better health decisions.</p>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="principle-card animate-fade-up delay-500"
+                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
+                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
+                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
+                        <div style="color: #60AC38; margin-bottom: 14px;">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Supporting healthier communities through responsible pharmacy care.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Core Principles -->
-        <div style="margin-top: 60px;">
-            <div class="principles-header animate-fade-up">
-                <h2>Core Principles</h2>
-                <p>The foundation of every decision we make.</p>
-            </div>
-
-            <div class="principles-grid">
-                <div class="principle-card animate-fade-up delay-100">
-                    <span class="principle-number">01</span>
-                    <h3>Accessibility</h3>
-                    <p>Healthcare products should be easily available for everyone within the community without
-                        compromising on quality.</p>
-                </div>
-
-                <div class="principle-card animate-fade-up delay-200">
-                    <span class="principle-number">02</span>
-                    <h3>Quality Assurance</h3>
-                    <p>Strict standards are maintained for sourcing and storing medicines to ensure every product is
-                        safe and effective.</p>
-                </div>
-
-                <div class="principle-card animate-fade-up delay-300">
-                    <span class="principle-number">03</span>
-                    <h3>Patient First</h3>
-                    <p>Every decision prioritizes the wellbeing of customers, offering personalized care and
-                        attention to individual needs.</p>
-                </div>
-
-                <div class="principle-card animate-fade-up delay-400">
-                    <span class="principle-number">04</span>
-                    <h3>Continuous Improvement</h3>
-                    <p>We continuously adapt and improve our services and product offerings to provide better
-                        healthcare support.</p>
-                </div>
-            </div>
-        </div>
 
         </div>
     </section>
@@ -146,6 +244,7 @@
 
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
 
 </html>

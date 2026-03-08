@@ -1,0 +1,485 @@
+/* ============================================
+   MedBe Medical Animations & Visual Effects
+   ============================================ */
+
+/* ----- BRAND SWEEP ANIMATION (MedBe name) ----- */
+@keyframes brand-sweep {
+    0% {
+        transform: translateX(-120%) skewX(-15deg);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(250%) skewX(-15deg);
+        opacity: 0;
+    }
+}
+
+@keyframes brand-glow-pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 8px rgba(96, 172, 56, 0);
+    }
+
+    50% {
+        text-shadow: 0 0 18px rgba(96, 172, 56, 0.6), 0 0 30px rgba(96, 172, 56, 0.25);
+    }
+}
+
+/* Applied to hero-title and all heading-level MedBe text */
+.hero-title {
+    position: relative;
+    overflow: visible;
+}
+
+/* Shimmer sweep overlay on the hero h1 */
+.hero-title::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 40%;
+    height: 110%;
+    background: linear-gradient(105deg,
+            transparent 30%,
+            rgba(96, 172, 56, 0.18) 50%,
+            transparent 70%);
+    animation: brand-sweep 2.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s 1 forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Subtle glow on the branded "db" letters */
+.brand-db {
+    animation: brand-glow-pulse 3s ease-in-out infinite;
+}
+
+/* Hover green glow on any element containing brand class */
+.hero-title:hover .brand-db,
+h2:hover .brand-db,
+h3:hover .brand-db {
+    text-shadow: 0 0 20px rgba(96, 172, 56, 0.9), 0 0 40px rgba(96, 172, 56, 0.4);
+    transition: text-shadow 0.3s ease;
+}
+
+/* Green underline animation on MedBe-brand text hover */
+.nap-info strong,
+.footer h3 {
+    position: relative;
+    display: inline-block;
+}
+
+.nap-info strong::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #60AC38;
+    transition: width 0.4s ease;
+}
+
+.nap-info strong:hover::after {
+    width: 100%;
+}
+
+
+/* ----- FLOATING MEDICAL ICONS (Vision Section) ----- */
+@keyframes med-float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.18;
+    }
+
+    33% {
+        transform: translateY(-18px) rotate(6deg);
+        opacity: 0.28;
+    }
+
+    66% {
+        transform: translateY(-8px) rotate(-4deg);
+        opacity: 0.22;
+    }
+}
+
+@keyframes med-float-b {
+
+    0%,
+    100% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 0.15;
+    }
+
+    50% {
+        transform: translateY(10px) rotate(-8deg);
+        opacity: 0.25;
+    }
+}
+
+@keyframes med-float-c {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(5deg);
+        opacity: 0.12;
+    }
+
+    50% {
+        transform: translateY(-14px) rotate(-5deg);
+        opacity: 0.22;
+    }
+}
+
+.vm-section-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.med-float-icon {
+    position: absolute;
+    color: #60AC38;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.18;
+}
+
+.med-float-icon svg {
+    display: block;
+}
+
+.med-icon-1 {
+    top: 5%;
+    left: 3%;
+    animation: med-float 7s ease-in-out infinite;
+}
+
+.med-icon-2 {
+    top: 15%;
+    right: 4%;
+    animation: med-float-b 9s ease-in-out 1s infinite;
+}
+
+.med-icon-3 {
+    bottom: 15%;
+    left: 5%;
+    animation: med-float-c 8s ease-in-out 2s infinite;
+}
+
+.med-icon-4 {
+    bottom: 8%;
+    right: 6%;
+    animation: med-float 10s ease-in-out 0.5s infinite;
+}
+
+.med-icon-5 {
+    top: 45%;
+    left: 1.5%;
+    animation: med-float-b 6s ease-in-out 3s infinite;
+}
+
+
+/* ----- VM CARD EFFECTS (Vision & Mission) ----- */
+@keyframes border-pulse-once {
+    0% {
+        box-shadow: 0 0 0 0 rgba(96, 172, 56, 0.55);
+    }
+
+    60% {
+        box-shadow: 0 0 0 18px rgba(96, 172, 56, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(96, 172, 56, 0);
+    }
+}
+
+.vm-card {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.vm-card.is-animated {
+    animation: border-pulse-once 1.4s ease-out 0.2s 1;
+}
+
+.vm-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(96, 172, 56, 0.2);
+}
+
+/* Green accent line sweeping in on vm-card reveal */
+.vm-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #60AC38, transparent);
+    border-radius: 0 0 12px 12px;
+    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vm-card.is-animated::after {
+    width: 100%;
+}
+
+
+/* ----- MISSION SEQUENCE ANIMATION ----- */
+@keyframes seq-appear {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.88);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes seq-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.2);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.12);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+.mission-sequence {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 22px 0 10px;
+    flex-wrap: wrap;
+}
+
+.mission-seq-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    color: #60AC38;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.mission-seq-step svg {
+    margin-bottom: 2px;
+}
+
+.mission-seq-arrow {
+    color: rgba(96, 172, 56, 0.45);
+    opacity: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-bottom: 14px;
+}
+
+/* Triggered by JS when mission card enters viewport */
+.mission-sequence.seq-visible .mission-seq-step:nth-child(1) {
+    animation: seq-appear 0.5s ease forwards 0.1s;
+}
+
+.mission-sequence.seq-visible .mission-seq-arrow:nth-child(2) {
+    animation: seq-appear 0.4s ease forwards 0.35s;
+}
+
+.mission-sequence.seq-visible .mission-seq-step:nth-child(3) {
+    animation: seq-slide 0.5s ease forwards 0.55s;
+}
+
+.mission-sequence.seq-visible .mission-seq-arrow:nth-child(4) {
+    animation: seq-appear 0.4s ease forwards 0.75s;
+}
+
+.mission-sequence.seq-visible .mission-seq-step:nth-child(5) {
+    animation: seq-appear 0.5s ease forwards 0.95s;
+}
+
+/* Heart icon pulse */
+.mission-seq-step .heart-icon {
+    animation: heartbeat 1.6s ease-in-out infinite;
+}
+
+
+/* ----- VALUE CARDS (Core Values on vision.html) ----- */
+.principle-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+/* Floating shine sweep on hover */
+.principle-card::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -80%;
+    width: 60%;
+    height: 220%;
+    background: linear-gradient(105deg,
+            transparent 40%,
+            rgba(96, 172, 56, 0.12) 55%,
+            transparent 70%);
+    transform: skewX(-15deg);
+    transition: left 0.55s ease, opacity 0.55s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.principle-card:hover::before {
+    left: 140%;
+    opacity: 1;
+}
+
+/* Icon hover: pulse + slight rotate */
+.principle-card:hover>div:first-child svg {
+    animation: icon-pulse 0.5s ease;
+}
+
+@keyframes icon-pulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(-8deg) scale(1.15);
+    }
+
+    75% {
+        transform: rotate(6deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* Staggered scroll reveal - JS adds .seq-revealed to grid */
+.principles-grid.seq-revealed .principle-card:nth-child(1) {
+    animation: seq-appear 0.5s ease forwards;
+}
+
+.principles-grid.seq-revealed .principle-card:nth-child(2) {
+    animation: seq-appear 0.5s ease forwards 0.12s;
+}
+
+.principles-grid.seq-revealed .principle-card:nth-child(3) {
+    animation: seq-appear 0.5s ease forwards 0.24s;
+}
+
+.principles-grid.seq-revealed .principle-card:nth-child(4) {
+    animation: seq-appear 0.5s ease forwards 0.36s;
+}
+
+.principles-grid.seq-revealed .principle-card:nth-child(5) {
+    animation: seq-appear 0.5s ease forwards 0.48s;
+}
+
+.principles-grid.seq-revealed .principle-card {
+    opacity: 0;
+    /* start hidden, animation fills in */
+}
+
+
+/* ----- MEDICAL BACKGROUND PARTICLES ----- */
+@keyframes particle-drift {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: var(--p-opacity, 0.06);
+    }
+
+    90% {
+        opacity: var(--p-opacity, 0.06);
+    }
+
+    100% {
+        transform: translateY(-120px) translateX(30px) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+.med-particles-canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.med-particle {
+    position: absolute;
+    color: #60AC38;
+    animation: particle-drift linear infinite;
+}
+
+
+/* ----- SECTION TITLE ACCENT LINE ----- */
+.section-accent-line {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #60AC38, rgba(96, 172, 56, 0.2));
+    border-radius: 2px;
+    margin-bottom: 18px;
+    transition: width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-accent-line.is-animated {
+    width: 70px;
+}
+
+
+/* ----- GLOBAL MEDBE TEXT HOVER GLOW ----- */
+h1:hover,
+h2:hover,
+h3:hover {
+    transition: text-shadow 0.3s ease;
+}
+
+/* ----- DELAY HELPERS (extend to 600ms) ----- */
+.delay-600 {
+    transition-delay: 600ms;
+}
