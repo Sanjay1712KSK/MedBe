@@ -35,10 +35,10 @@ class Footer extends HTMLElement {
                       <div class="footer-col">
                           <h3>Quick Links</h3>
                           <ul class="footer-links">
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="index.html">MedBe Pharmacy Kochi Home</a></li>
+                              <li><a href="about.html">About Our Pharmacy</a></li>
                               <li><a href="vision.html">Vision & Mission</a></li>
-                              <li><a href="index.html#services">Our Services</a></li>
+                              <li><a href="index.html#services">Our Pharmacy Services</a></li>
                           </ul>
                       </div>
                       <div class="footer-col" id="contact">
