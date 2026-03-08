@@ -483,3 +483,28 @@ h3:hover {
 .delay-600 {
     transition-delay: 600ms;
 }
+
+/* ----- CORE VALUES: staggered scroll reveal ----- */
+.values-grid.seq-revealed .value-card {
+    opacity: 0;
+}
+
+.values-grid.seq-revealed .value-card:nth-child(1) {
+    animation: seq-appear 0.5s ease forwards 0s;
+}
+
+.values-grid.seq-revealed .value-card:nth-child(2) {
+    animation: seq-appear 0.5s ease forwards 0.1s;
+}
+
+.values-grid.seq-revealed .value-card:nth-child(3) {
+    animation: seq-appear 0.5s ease forwards 0.2s;
+}
+
+.values-grid.seq-revealed .value-card:nth-child(4) {
+    animation: seq-appear 0.5s ease forwards 0.3s;
+}
+
+.values-grid.seq-revealed .value-card:nth-child(5) {
+    animation: seq-appear 0.5s ease forwards 0.4s;
+}

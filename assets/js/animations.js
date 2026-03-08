@@ -65,25 +65,41 @@ function initMissionSequence() {
 
 /* ── 3. VALUE CARDS STAGGERED REVEAL ───────────────────────────── */
 function initValueCardsSequence() {
-    const grid = document.querySelector('.principles-grid');
-    if (!grid) return;
-
-    // Pre-hide cards so the CSS animation takes over
-    grid.querySelectorAll('.principle-card').forEach(card => {
-        card.style.opacity = '0';
-    });
-
-    const obs = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                grid.classList.add('seq-revealed');
-                obs.unobserve(grid);
-            }
+    // vision.html: .principles-grid
+    const principlesGrid = document.querySelector('.principles-grid');
+    if (principlesGrid) {
+        principlesGrid.querySelectorAll('.principle-card').forEach(card => {
+            card.style.opacity = '0';
         });
-    }, { threshold: 0.15 });
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    principlesGrid.classList.add('seq-revealed');
+                    obs.unobserve(principlesGrid);
+                }
+            });
+        }, { threshold: 0.15 });
+        obs.observe(principlesGrid);
+    }
 
-    obs.observe(grid);
+    // index.html: .values-grid (Core Values section)
+    const valuesGrid = document.querySelector('.values-grid');
+    if (valuesGrid) {
+        valuesGrid.querySelectorAll('.value-card').forEach(card => {
+            card.style.opacity = '0';
+        });
+        const obs2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    valuesGrid.classList.add('seq-revealed');
+                    obs2.unobserve(valuesGrid);
+                }
+            });
+        }, { threshold: 0.15 });
+        obs2.observe(valuesGrid);
+    }
 }
+
 
 /* ── 4. SECTION ACCENT LINES ────────────────────────────────────── */
 function initSectionAccentLines() {

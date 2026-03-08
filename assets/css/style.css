@@ -1410,3 +1410,416 @@ ul {
         padding: 30px 24px;
     }
 }
+
+/* =============================================
+   UI ENHANCEMENT – Phase 2
+   All new styles for improved layout,
+   Core Values, hero spacing, micro-interactions
+   ============================================= */
+
+/* ----- Hero hierarchy spacing overrides ----- */
+.hero-tagline {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    margin-bottom: 10px !important;
+}
+
+.hero-sub {
+    color: var(--medbe-green);
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.hero-description {
+    max-width: 520px;
+    margin-bottom: 32px !important;
+}
+
+/* ----- Section green divider line ----- */
+.section-green-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(96, 172, 56, 0.35), transparent);
+    margin: 0;
+}
+
+/* ----- Hero cards — glow border on hover ----- */
+.hero-card-sm {
+    position: static !important;
+    width: 240px;
+    padding: 16px 20px;
+    animation: float 6s ease-in-out infinite;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+
+.hero-card-sm:hover {
+    border-color: var(--medbe-green) !important;
+    box-shadow: 0 0 20px rgba(96, 172, 56, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    transform: translateY(-4px) !important;
+}
+
+.hero-card-sm:hover .glass-card-icon {
+    animation: icon-pulse-sm 0.5s ease;
+}
+
+@keyframes icon-pulse-sm {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.2) rotate(-6deg);
+    }
+
+    70% {
+        transform: scale(1.1) rotate(4deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* ----- About section brand content improvements ----- */
+.about-brand-desc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-top: 14px;
+}
+
+/* ----- NAP info card redesign ----- */
+.nap-info {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: rgba(96, 172, 56, 0.04);
+    border-left: 3px solid var(--medbe-green);
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nap-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(96, 172, 56, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.nap-info h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    letter-spacing: 0.3px;
+}
+
+.nap-info p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+.nap-info a {
+    color: var(--medbe-green);
+    text-decoration: none;
+}
+
+.nap-map-link {
+    display: inline-block;
+    color: var(--medbe-green) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    letter-spacing: 0.3px;
+    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
+}
+
+.nap-map-link:hover {
+    letter-spacing: 0.8px;
+    opacity: 0.85;
+}
+
+/* ----- Services: 10th card spans center on last row ----- */
+.service-card-wide {
+    grid-column: 2 / 3;
+}
+
+@media (max-width: 1024px) {
+    .service-card-wide {
+        grid-column: auto;
+    }
+}
+
+/* ----- Service card enhanced hover ----- */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: -60%;
+    width: 60%;
+    height: 240%;
+    background: linear-gradient(105deg, transparent 40%, rgba(96, 172, 56, 0.07) 55%, transparent 70%);
+    transform: skewX(-15deg);
+    transition: left 0.55s ease, opacity 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.service-card:hover::before {
+    left: 140%;
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(96, 172, 56, 0.55);
+    box-shadow: 0 12px 36px rgba(96, 172, 56, 0.12), 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.service-card:hover .service-icon svg {
+    animation: icon-rotate 0.5s ease;
+}
+
+@keyframes icon-rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    30% {
+        transform: rotate(-10deg) scale(1.15);
+    }
+
+    70% {
+        transform: rotate(6deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* ----- Feature items improved hover ----- */
+.feature-item {
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+.feature-item:hover {
+    background: rgba(96, 172, 56, 0.04);
+    transform: translateY(-4px);
+}
+
+.feature-item:hover .feature-icon svg {
+    animation: icon-pulse 0.5s ease;
+}
+
+/* ----- Button micro-interactions (enhanced) ----- */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.12);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover::after {
+    opacity: 1;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 30px rgba(var(--medbe-green-rgb), 0.55), 0 4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0 20px rgba(96, 172, 56, 0.2);
+}
+
+/* ----- Section header alignment ----- */
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 64px;
+}
+
+.section-header .section-accent-line {
+    margin: 0 auto 18px;
+}
+
+/* ----- About content section heading size ----- */
+.about-content h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+/* =============================================
+   CORE VALUES SECTION
+   ============================================= */
+.core-values-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-darker);
+    position: relative;
+}
+
+.core-values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(96, 172, 56, 0.06) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.value-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--border-radius);
+    padding: 36px 24px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    cursor: default;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--medbe-green), transparent);
+    border-radius: 0 0 12px 12px;
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.value-card:hover::before {
+    width: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(96, 172, 56, 0.4);
+    box-shadow: 0 12px 40px rgba(96, 172, 56, 0.12);
+}
+
+.value-card:hover .value-icon-wrap svg {
+    animation: icon-pulse-sm 0.5s ease;
+}
+
+.value-icon-wrap {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: rgba(96, 172, 56, 0.08);
+    border: 1px solid rgba(96, 172, 56, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--medbe-green);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.value-card:hover .value-icon-wrap {
+    background: rgba(96, 172, 56, 0.15);
+    border-color: var(--medbe-green);
+    transform: scale(1.08);
+}
+
+.value-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.value-card p {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ----- Extra delay helpers ----- */
+.delay-350 {
+    transition-delay: 350ms;
+}
+
+.delay-450 {
+    transition-delay: 450ms;
+}
+
+/* ----- Responsive: Core Values ----- */
+@media (max-width: 1200px) {
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 2.8rem !important;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visuals-6 {
+        display: none;
+    }
+}
