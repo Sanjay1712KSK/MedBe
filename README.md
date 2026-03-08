@@ -7,7 +7,7 @@ The website highlights MedBe's philosophy of **“Care Beyond Medicine”**, foc
 ---
 
 ## Website
-medbe.in
+www.medbe.in
 
 ## Instagram
 https://www.instagram.com/medbe_pharmacy/
