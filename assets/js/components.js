@@ -10,15 +10,64 @@ class Navbar extends HTMLElement {
                   <div class="nav-links">
                       <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
                       <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
-                      <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision & Mission</a>
+                      <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
                       <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
                   </div>
                   <a href="index.html" class="logo" aria-label="MedBe Pharmacy Home">
                       <img src="logo.png" alt="MedBe Pharmacy Kochi Logo" loading="lazy" width="150" height="50" style="height: 50px; width: auto; object-fit: contain;">
                   </a>
+                  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
               </div>
           </nav>
+
+          <!-- Mobile full-screen menu overlay -->
+          <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-modal="true">
+              <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
+              <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
+              <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
+              <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
+          </div>
       `;
+
+        // Hamburger toggle logic
+        const hamburger = this.querySelector('#nav-hamburger');
+        const mobileMenu = document.getElementById('nav-mobile-menu');
+
+        const closeMenu = () => {
+            hamburger.classList.remove('is-open');
+            mobileMenu.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        };
+
+        const openMenu = () => {
+            hamburger.classList.add('is-open');
+            mobileMenu.classList.add('is-open');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        };
+
+        hamburger.addEventListener('click', () => {
+            if (hamburger.classList.contains('is-open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Close on any link click inside the overlay
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
     }
 }
 
