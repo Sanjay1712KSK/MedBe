@@ -7,19 +7,15 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
           <nav class="navbar" id="navbar">
               <div class="container nav-container">
-                  <a href="index.html" class="logo">
-                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5Z" stroke="#00A651" stroke-width="2"/>
-                          <path d="M12 7V17M7 12H17" stroke="#00A651" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      Med<span>Be</span>
-                  </a>
                   <div class="nav-links">
                       <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
                       <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
                       <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision & Mission</a>
-                      <a href="#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
+                      <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
                   </div>
+                  <a href="index.html" class="logo">
+                      <img src="logo.png" alt="MedBe Logo" style="height: 50px; width: auto; object-fit: contain;">
+                  </a>
               </div>
           </nav>
       `;
