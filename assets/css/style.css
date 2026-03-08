@@ -5,24 +5,42 @@
     --medbe-green-rgb: 96, 172, 56;
     --white: #FFFFFF;
     --gray: #A0A0A0;
-    
+
     --bg-black: var(--black);
     --bg-darker: #050505;
     --bg-card: rgba(255, 255, 255, 0.03);
     --text-primary: var(--white);
     --text-secondary: var(--gray);
-    
+
     /* Typography */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
+
     /* Layout & Spacing */
     --container-width: 1200px;
     --section-padding: 100px 0;
-    
+
     /* Borders */
     --border-radius: 12px;
     --border-glass: 1px solid rgba(96, 172, 56, 0.4);
+}
+
+.brand-db {
+    color: var(--medbe-green);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.brand-db::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 6px;
+    border-bottom: 3px solid var(--medbe-green);
+    border-radius: 50%;
 }
 
 /* Base Styles */
