@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
                       <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
                   </div>
                   <a href="index.html" class="logo">
-                      <img src="logo.png" alt="MedBe Logo" style="height: 50px; width: auto; object-fit: contain;">
+                      <img src="logo.png" alt="Medbe Logo" style="height: 50px; width: auto; object-fit: contain;">
                   </a>
               </div>
           </nav>
@@ -29,7 +29,7 @@ class Footer extends HTMLElement {
               <div class="container">
                   <div class="footer-grid">
                       <div class="footer-col">
-                          <h3>Me<span style="color: var(--medbe-green);">dB</span>e Pharmacy</h3>
+                          <h3>Me<span style="color: var(--medbe-green);">db</span>e Pharmacy</h3>
                           <p>Care Beyond Medicine. Your trusted neighborhood healthcare partner dedicated to providing authentic medicines and professional guidance.</p>
                       </div>
                       <div class="footer-col">
@@ -57,7 +57,7 @@ class Footer extends HTMLElement {
                       </div>
                   </div>
                   <div class="footer-bottom">
-                      <p>&copy; ${new Date().getFullYear()} Me<span style="color: var(--medbe-green);">dB</span>e Pharmacy. All rights reserved.</p>
+                      <p>&copy; ${new Date().getFullYear()} Me<span style="color: var(--medbe-green);">db</span>e Pharmacy. All rights reserved.</p>
                   </div>
               </div>
           </footer>
