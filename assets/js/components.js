@@ -13,8 +13,8 @@ class Navbar extends HTMLElement {
                       <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision & Mission</a>
                       <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
                   </div>
-                  <a href="index.html" class="logo">
-                      <img src="logo.png" alt="Medbe Logo" style="height: 50px; width: auto; object-fit: contain;">
+                  <a href="index.html" class="logo" aria-label="MedBe Pharmacy Home">
+                      <img src="logo.png" alt="MedBe Pharmacy Kochi Logo" loading="lazy" width="150" height="50" style="height: 50px; width: auto; object-fit: contain;">
                   </a>
               </div>
           </nav>
