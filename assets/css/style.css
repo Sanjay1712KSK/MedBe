@@ -1,0 +1,215 @@
+/* --- Inner Pages Styles (About & Vision) --- */
+
+.inner-header {
+    padding: 180px 0 100px;
+    background-color: var(--bg-black);
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.inner-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    background: radial-gradient(ellipse at top, rgba(0, 166, 81, 0.15), transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.inner-header .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.inner-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.inner-header p {
+    font-size: 1.2rem;
+}
+
+/* Page Content Base */
+.page-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-darker);
+}
+
+/* About Us Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: var(--section-padding);
+}
+
+.about-grid:last-child {
+    margin-bottom: 0;
+}
+
+.about-text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.about-text-content p {
+    margin-bottom: 20px;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #111;
+    border-radius: var(--border-radius);
+    border: var(--border-glass);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: var(--font-heading);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Commitment List */
+.commitment-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.commitment-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    background: var(--bg-card);
+    padding: 20px 25px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.commitment-item:hover {
+    transform: translateX(10px);
+    border-color: rgba(0, 166, 81, 0.4);
+}
+
+.commitment-icon {
+    color: var(--accent-green);
+    display: flex;
+    align-items: center;
+}
+
+/* Vision & Mission Layout */
+.vm-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: var(--section-padding);
+}
+
+.vm-card {
+    background: var(--bg-card);
+    border: var(--border-glass);
+    border-radius: var(--border-radius);
+    padding: 50px 40px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.vm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 166, 81, 0.1);
+}
+
+.vm-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    background: rgba(0, 166, 81, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-green);
+}
+
+.vm-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.vm-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Core Principles Matrix */
+.principles-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.principles-header h2 {
+    font-size: 2.5rem;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.principle-card {
+    background: var(--bg-black);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+    padding: 40px 30px;
+    border-top: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.principle-card:hover {
+    border-top-color: var(--accent-green);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.principle-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.05);
+    margin-bottom: 10px;
+    display: block;
+    line-height: 1;
+}
+
+.principle-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+/* Responsive Overrides inner */
+@media (max-width: 768px) {
+
+    .about-grid,
+    .vm-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-header h1 {
+        font-size: 2.5rem;
+    }
+}
