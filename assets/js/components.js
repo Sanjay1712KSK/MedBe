@@ -1,10 +1,10 @@
 // Reusable Navbar and Footer Components
 
 class Navbar extends HTMLElement {
-  connectedCallback() {
-      const activePage = this.getAttribute('active') || 'home';
-      
-      this.innerHTML = `
+    connectedCallback() {
+        const activePage = this.getAttribute('active') || 'home';
+
+        this.innerHTML = `
           <nav class="navbar" id="navbar">
               <div class="container nav-container">
                   <a href="index.html" class="logo">
@@ -23,12 +23,12 @@ class Navbar extends HTMLElement {
               </div>
           </nav>
       `;
-  }
+    }
 }
 
 class Footer extends HTMLElement {
-  connectedCallback() {
-      this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
           <footer class="footer animate-fade-up">
               <div class="container">
                   <div class="footer-grid">
@@ -49,14 +49,15 @@ class Footer extends HTMLElement {
                           <h3>Contact Information</h3>
                           <ul class="footer-links">
                               <li><a href="mailto:info@medbepharmacy.com">info@medbepharmacy.com</a></li>
-                              <li><a href="tel:+1234567890">+1 234 567 890</a></li>
-                              <li><p>123 Healthcare Avenue,<br>Kochi, Kerala 682001</p></li>
+                              <li><a href="https://wa.me/919988443038" target="_blank" rel="noopener noreferrer">WhatsApp: +91 99884 43038</a></li>
+                              <li><a href="tel:+919988446774">Call: +91 99884 46774</a></li>
+                              <li><a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer" style="line-height:1.5; display:inline-block; margin-top:10px;">Metro Pillar Number : 775, Tharun Tower, G -Floor,<br>Sahodaran Ayyappan Rd, Kochi,<br>Ernakulam, Kerala 682020</a></li>
                           </ul>
                       </div>
                       <div class="footer-col">
                           <h3>Operating Hours</h3>
-                          <p>Monday - Friday:<br>8:00 AM - 10:00 PM</p>
-                          <p>Saturday - Sunday:<br>9:00 AM - 9:00 PM</p>
+                          <p>Monday - Saturday:<br>9:00 AM - 11:00 PM</p>
+                          <p>Sunday:<br>10:00 AM - 10:00 PM</p>
                       </div>
                   </div>
                   <div class="footer-bottom">
@@ -65,7 +66,7 @@ class Footer extends HTMLElement {
               </div>
           </footer>
       `;
-  }
+    }
 }
 
 // Register custom elements
