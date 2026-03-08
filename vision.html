@@ -8,7 +8,15 @@
     <meta name="keywords"
         content="MedBe Pharmacy Vision, Pharmacy Mission, Healthcare Standards, Core Principles Kochi">
     <meta name="robots" content="index, follow">
-    <title>Vision & Mission | Medbe Pharmacy</title>
+    <title>Vision &amp; Mission | Medbe Pharmacy</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
 
     <meta name="description"
         content="Discover the vision and mission of MedBe Pharmacy. We aim to be a trusted healthcare partner offering accessible medicines and continuous improvement.">
@@ -16,7 +24,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://medbe.in/vision.html">
-    <meta property="og:title" content="Vision & Mission | Medbe Pharmacy">
+    <meta property="og:title" content="Vision &amp; Mission | Medbe Pharmacy">
     <meta property="og:description"
         content="Discover the vision and mission of MedBe Pharmacy. We aim to be a trusted healthcare partner offering accessible medicines and continuous improvement.">
     <meta property="og:image" content="https://medbe.in/assets/images/og-vision.jpg">
@@ -32,100 +40,377 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/vision.css">
 </head>
 
 <body>
 
     <app-navbar active="vision"></app-navbar>
 
-    <header class="inner-header">
+    <!-- ============================================================
+         PAGE HERO HEADER
+         ============================================================ -->
+    <header class="vm-page-header">
+        <div class="vm-header-particles">
+            <!-- Floating background icons -->
+            <div class="vm-bg-icon vm-bg-icon-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="2" y="7" width="20" height="10" rx="5" />
+                    <line x1="12" y1="7" x2="12" y2="17" />
+                </svg>
+            </div>
+            <div class="vm-bg-icon vm-bg-icon-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+            </div>
+            <div class="vm-bg-icon vm-bg-icon-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+            </div>
+            <div class="vm-bg-icon vm-bg-icon-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+            </div>
+            <div class="vm-bg-icon vm-bg-icon-5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+            </div>
+        </div>
+
         <div class="container">
-            <h1 class="animate-fade-up">Vision & Mission</h1>
-            <p class="animate-fade-up delay-100">The Principles Guiding Our Approach to Healthcare</p>
+            <div class="vm-header-content animate-fade-up">
+                <span class="vm-page-label">Our Story</span>
+                <h1>Vision &amp; Mission</h1>
+                <p>Guiding principles behind Me<span class="brand-db">db</span>e Pharmacy's commitment to accessible
+                    healthcare and community wellbeing.</p>
+                <div class="vm-header-divider">
+                    <span class="vm-divider-line"></span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="page-section">
+    <!-- ============================================================
+         TIMELINE WRAPPER — connects all three sections
+         ============================================================ -->
+    <div class="vm-timeline-container">
+
+        <!-- TIMELINE TRACK -->
+        <div class="vm-timeline-track" aria-hidden="true">
+            <div class="vm-timeline-line" id="vmTimelineLine"></div>
+        </div>
+
+        <!-- ========================================================
+             VISION SECTION
+             ======================================================== -->
+        <section class="vm-section vm-vision-section" id="vision">
+            <div class="container">
+                <div class="vm-section-inner">
+
+                    <!-- Timeline dot -->
+                    <div class="vm-timeline-dot vm-dot-vision" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="vm-content-card vm-vision-card animate-fade-up">
+                        <div class="vm-card-glow" aria-hidden="true"></div>
+
+                        <!-- Floating micro icons -->
+                        <div class="vm-float-icons" aria-hidden="true">
+                            <span class="vm-fi vm-fi-1">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="7" width="20" height="10" rx="5" />
+                                    <line x1="12" y1="7" x2="12" y2="17" />
+                                </svg>
+                            </span>
+                            <span class="vm-fi vm-fi-2">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </span>
+                            <span class="vm-fi vm-fi-3">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M1 3h15l-1.5 9H2.5L1 3z" />
+                                    <path d="M16 3h6l-1.5 9H16" />
+                                    <path d="M1 3l1.5 12h13L17 3" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="vm-card-label">
+                            <div class="vm-icon-circle">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </div>
+                            <span>Our Vision</span>
+                        </div>
+
+                        <h2 class="vm-card-heading">Extending Care<br><span class="vm-heading-accent">Beyond the
+                                Counter</span></h2>
+
+                        <p class="vm-card-body">To make healthcare more accessible by delivering essential medicines,
+                            professional guidance, and wellness support directly to people's doorsteps. Me<span
+                                class="brand-db">db</span>e Pharmacy strives to extend pharmacy care beyond the counter,
+                            ensuring patients receive timely medicines, reliable information, and continuous support for
+                            better health.</p>
+
+                        <div class="vm-card-tag">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Healthcare made accessible for every family in Kochi
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             MISSION SECTION
+             ======================================================== -->
+        <section class="vm-section vm-mission-section" id="mission">
+            <div class="container">
+                <div class="vm-section-inner">
+
+                    <!-- Timeline dot -->
+                    <div class="vm-timeline-dot vm-dot-mission" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 16 16 12 12 8" />
+                            <line x1="8" y1="12" x2="16" y2="12" />
+                        </svg>
+                    </div>
+
+                    <!-- Two-column layout -->
+                    <div class="vm-mission-grid">
+
+                        <!-- Left: mission text -->
+                        <div class="vm-mission-text animate-slide-left">
+                            <div class="vm-card-label">
+                                <div class="vm-icon-circle">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 16 16 12 12 8" />
+                                        <line x1="8" y1="12" x2="16" y2="12" />
+                                    </svg>
+                                </div>
+                                <span>Our Mission</span>
+                            </div>
+
+                            <h2 class="vm-card-heading">Pharmacy Care<br><span class="vm-heading-accent">At Your
+                                    Doorstep</span></h2>
+
+                            <p class="vm-card-body">To ensure patients receive genuine medicines and reliable pharmacy
+                                support at their doorstep through efficient home delivery services. Me<span
+                                    class="brand-db">db</span>e Pharmacy is committed to improving health outcomes by
+                                providing clear medication guidance, promoting preventive healthcare awareness, and
+                                making
+                                pharmacy care more convenient and accessible for every family.</p>
+                        </div>
+
+                        <!-- Right: feature cards -->
+                        <div class="vm-mission-cards">
+                            <div class="vm-feat-card animate-fade-up delay-100">
+                                <div class="vm-feat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="1" y="3" width="15" height="13" rx="2" />
+                                        <path d="M16 8h6v12H7v-3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Doorstep Medicine Delivery</strong>
+                                    <p>Fast, reliable delivery of medicines directly to your home across Kochi.</p>
+                                </div>
+                            </div>
+
+                            <div class="vm-feat-card animate-fade-up delay-200">
+                                <div class="vm-feat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Reliable Pharmacy Guidance</strong>
+                                    <p>Expert pharmacist advice on prescriptions, dosage, and drug interactions.</p>
+                                </div>
+                            </div>
+
+                            <div class="vm-feat-card animate-fade-up delay-300">
+                                <div class="vm-feat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Preventive Healthcare Awareness</strong>
+                                    <p>Promoting health education and preventive care for the Kochi community.</p>
+                                </div>
+                            </div>
+
+                            <div class="vm-feat-card animate-fade-up delay-400">
+                                <div class="vm-feat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Accessible Healthcare Support</strong>
+                                    <p>Breaking barriers to ensure every patient in Ernakulam gets the care they need.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             CORE VALUES SECTION
+             ======================================================== -->
+        <section class="vm-section vm-values-section" id="core-values">
+            <div class="container">
+                <div class="vm-section-inner">
+
+                    <!-- Timeline dot -->
+                    <div class="vm-timeline-dot vm-dot-values" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+
+                    <!-- Header -->
+                    <div class="vm-section-header animate-fade-up">
+                        <div class="vm-card-label" style="justify-content: center;">
+                            <div class="vm-icon-circle">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                            </div>
+                            <span>What We Stand For</span>
+                        </div>
+                        <h2 class="vm-section-title">Our Core Values</h2>
+                        <p class="vm-section-sub">The values that guide everything we do at Me<span
+                                class="brand-db">db</span>e Pharmacy.</p>
+                    </div>
+
+                    <!-- Values grid -->
+                    <div class="vm-values-grid principles-grid" id="vmValuesGrid">
+
+                        <div class="vm-value-card principle-card animate-fade-up delay-100">
+                            <div class="vm-value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <h3>Trust</h3>
+                            <p>We stock only verified, authentic medicines from licensed pharmaceutical distributors.
+                            </p>
+                        </div>
+
+                        <div class="vm-value-card principle-card animate-fade-up delay-200">
+                            <div class="vm-value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                            </div>
+                            <h3>Care</h3>
+                            <p>Every patient interaction is guided by genuine compassion and professional pharmacist
+                                support.</p>
+                        </div>
+
+                        <div class="vm-value-card principle-card animate-fade-up delay-300">
+                            <div class="vm-value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="16" />
+                                    <line x1="8" y1="12" x2="16" y2="12" />
+                                </svg>
+                            </div>
+                            <h3>Access</h3>
+                            <p>Home delivery and extended hours ensure medicines reach every patient, without barriers.
+                            </p>
+                        </div>
+
+                        <div class="vm-value-card principle-card animate-fade-up delay-400">
+                            <div class="vm-value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                </svg>
+                            </div>
+                            <h3>Knowledge</h3>
+                            <p>Empowering patients through clear guidance on prescriptions, dosage, and preventive care.
+                            </p>
+                        </div>
+
+                        <div class="vm-value-card principle-card animate-fade-up delay-500">
+                            <div class="vm-value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <h3>Community</h3>
+                            <p>Rooted in Kochi, we exist to serve and uplift the health of every family around us.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.vm-timeline-container -->
+
+    <!-- ============================================================
+         NAP INFO (Local SEO)
+         ============================================================ -->
+    <section class="vm-nap-section page-section" style="padding-top: 0;">
         <div class="container">
-
-            <!-- Vision & Mission Cards with floating medical icons -->
-            <div class="vm-section-wrapper">
-                <!-- Floating medical background icons -->
-                <div class="med-float-icon med-icon-1">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <rect x="2" y="7" width="20" height="10" rx="5" />
-                        <line x1="12" y1="7" x2="12" y2="17" />
-                    </svg>
-                </div>
-                <div class="med-float-icon med-icon-2">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                </div>
-                <div class="med-float-icon med-icon-3">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
-                </div>
-                <div class="med-float-icon med-icon-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                </div>
-                <div class="med-float-icon med-icon-5">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                </div>
-
-                <div class="vm-cards">
-                    <div class="vm-card animate-scale-in">
-                        <div class="vm-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                        </div>
-                        <h2>Our Vision</h2>
-                        <p>To make healthcare more accessible by delivering essential medicines, professional guidance,
-                            and
-                            wellness support directly to people's doorsteps. Me<span class="brand-db">db</span>e
-                            Pharmacy
-                            strives to extend pharmacy care beyond the counter, ensuring patients receive timely
-                            medicines,
-                            reliable information, and continuous support for better health.</p>
-                    </div>
-
-                    <div class="vm-card animate-fade-up delay-200">
-                        <div class="vm-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 16 16 12 12 8"></polyline>
-                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                            </svg>
-                        </div>
-                        <h2>Our Mission</h2>
-                        <p>To ensure patients receive genuine medicines and reliable pharmacy support at their doorstep
-                            through efficient home delivery services. Me<span class="brand-db">db</span>e Pharmacy is
-                            committed to improving health outcomes by providing clear medication guidance, promoting
-                            preventive healthcare awareness, and making pharmacy care more convenient and accessible for
-                            every family.</p>
-                    </div>
-                </div><!-- /.vm-cards -->
-            </div><!-- /.vm-section-wrapper -->
-
-
-            <!-- Local SEO Target: NAP Consistency -->
-            <div class="nap-info"
-                style="margin: 60px 0 0; padding: 25px; background: rgba(96, 172, 56, 0.05); border-left: 4px solid var(--medbe-green); border-radius: 4px;">
+            <div class="nap-info animate-fade-up"
+                style="padding: 25px; background: rgba(96,172,56,0.05); border-left: 4px solid var(--medbe-green); border-radius: 4px;">
                 <h2 style="font-size: 1.5rem; margin-bottom: 15px;">Visit Our Pharmacy in Kochi</h2>
                 <div style="display: flex; flex-wrap: wrap; gap: 30px;">
                     <div>
@@ -139,105 +424,24 @@
                         <p style="margin-bottom: 10px;">Hours: Mon-Sat 9AM-11PM | Sun 10AM-10PM</p>
                         <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
                             style="color: var(--medbe-green); font-weight: 600; text-decoration: underline;">Get
-                            Directions
-                            on Google Maps</a>
+                            Directions on Google Maps</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Core Values -->
-            <div style="margin-top: 60px;">
-                <div class="principles-header animate-fade-up">
-                    <h2>Our Core Values</h2>
-                    <p>The values that guide everything we do at Me<span class="brand-db">db</span>e Pharmacy.</p>
-                </div>
-
-                <div class="principles-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-                    <!-- Trust -->
-                    <div class="principle-card animate-fade-up delay-100"
-                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
-                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
-                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
-                        <div style="color: #60AC38; margin-bottom: 14px;">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                        </div>
-                        <h3>Trust</h3>
-                        <p>Providing authentic medicines and dependable healthcare services.</p>
-                    </div>
-
-                    <!-- Care -->
-                    <div class="principle-card animate-fade-up delay-200"
-                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
-                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
-                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
-                        <div style="color: #60AC38; margin-bottom: 14px;">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3>Care</h3>
-                        <p>Putting patients first with compassion and responsible pharmacy practices.</p>
-                    </div>
-
-                    <!-- Access -->
-                    <div class="principle-card animate-fade-up delay-300"
-                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
-                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
-                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
-                        <div style="color: #60AC38; margin-bottom: 14px;">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="8" x2="12" y2="16"></line>
-                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                            </svg>
-                        </div>
-                        <h3>Access</h3>
-                        <p>Making medicines and healthcare support easily available to everyone.</p>
-                    </div>
-
-                    <!-- Knowledge -->
-                    <div class="principle-card animate-fade-up delay-400"
-                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
-                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
-                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
-                        <div style="color: #60AC38; margin-bottom: 14px;">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                            </svg>
-                        </div>
-                        <h3>Knowledge</h3>
-                        <p>Sharing clear and reliable medication guidance for better health decisions.</p>
-                    </div>
-
-                    <!-- Community -->
-                    <div class="principle-card animate-fade-up delay-500"
-                        style="transition: transform 0.3s ease, border-color 0.3s ease; cursor: default;"
-                        onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='#60AC38'"
-                        onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor=''">
-                        <div style="color: #60AC38; margin-bottom: 14px;">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                        </div>
-                        <h3>Community</h3>
-                        <p>Supporting healthier communities through responsible pharmacy care.</p>
-                    </div>
-                </div>
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2 class="animate-fade-up">Experience Care Beyond Medicine</h2>
+            <p class="animate-fade-up delay-100">Visit Me<span class="brand-db">db</span>e Pharmacy in Kochi and
+                discover healthcare that truly puts patients first.</p>
+            <div class="cta-buttons animate-fade-up delay-200">
+                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+                <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary">Get Directions</a>
             </div>
-
         </div>
     </section>
 
@@ -246,6 +450,8 @@
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/animations.js"></script>
+    <script src="assets/js/vision.js"></script>
+
 </body>
 
 </html>

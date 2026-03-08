@@ -1,0 +1,591 @@
+/* ============================================================
+   VISION & MISSION PAGE — vision.css
+   Page-specific styles. Does not override global style.css.
+   ============================================================ */
+
+/* ============================================================
+   PAGE HEADER
+   ============================================================ */
+.vm-page-header {
+    position: relative;
+    padding: 140px 0 80px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 50% 0%, rgba(96, 172, 56, 0.08) 0%, transparent 60%);
+    text-align: center;
+}
+
+.vm-header-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* Floating background icons in header */
+.vm-bg-icon {
+    position: absolute;
+    color: var(--medbe-green);
+    opacity: 0.06;
+    animation: vm-float-bg 18s ease-in-out infinite;
+}
+
+.vm-bg-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.vm-bg-icon-1 {
+    top: 15%;
+    left: 8%;
+    animation-delay: 0s;
+    animation-duration: 20s;
+}
+
+.vm-bg-icon-2 {
+    top: 25%;
+    right: 10%;
+    animation-delay: 3s;
+    animation-duration: 16s;
+    opacity: 0.05;
+}
+
+.vm-bg-icon-3 {
+    top: 60%;
+    left: 5%;
+    animation-delay: 6s;
+    animation-duration: 22s;
+}
+
+.vm-bg-icon-4 {
+    top: 70%;
+    right: 8%;
+    animation-delay: 1s;
+    animation-duration: 18s;
+    opacity: 0.04;
+}
+
+.vm-bg-icon-5 {
+    top: 40%;
+    left: 50%;
+    animation-delay: 9s;
+    animation-duration: 24s;
+    opacity: 0.04;
+}
+
+@keyframes vm-float-bg {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-18px) rotate(6deg);
+    }
+
+    66% {
+        transform: translateY(10px) rotate(-4deg);
+    }
+}
+
+.vm-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.vm-page-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--medbe-green);
+    margin-bottom: 18px;
+    padding: 5px 14px;
+    border: 1px solid rgba(96, 172, 56, 0.25);
+    border-radius: 50px;
+    background: rgba(96, 172, 56, 0.06);
+}
+
+.vm-page-header h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.vm-page-header>.container>.vm-header-content>p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+}
+
+/* Animated divider line */
+.vm-header-divider {
+    display: flex;
+    justify-content: center;
+}
+
+.vm-divider-line {
+    display: block;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(90deg, transparent, var(--medbe-green), transparent);
+    border-radius: 2px;
+    animation: vm-divider-grow 1.2s ease 0.5s forwards;
+}
+
+@keyframes vm-divider-grow {
+    to {
+        width: 140px;
+    }
+}
+
+/* ============================================================
+   TIMELINE CONTAINER
+   ============================================================ */
+.vm-timeline-container {
+    position: relative;
+    padding: 20px 0 60px;
+}
+
+.vm-timeline-track {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.vm-timeline-line {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to bottom, var(--medbe-green), rgba(96, 172, 56, 0.2));
+    transition: height 0.1s linear;
+}
+
+/* Timeline dot */
+.vm-timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-black);
+    border: 2px solid rgba(96, 172, 56, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    z-index: 5;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vm-timeline-dot.is-active {
+    border-color: var(--medbe-green);
+    box-shadow: 0 0 0 6px rgba(96, 172, 56, 0.1), 0 0 20px rgba(96, 172, 56, 0.2);
+}
+
+.vm-dot-vision {
+    top: 40px;
+}
+
+.vm-dot-mission {
+    top: calc(40px + 560px);
+}
+
+.vm-dot-values {
+    top: calc(40px + 560px + 520px);
+}
+
+/* ============================================================
+   SECTION SHARED
+   ============================================================ */
+.vm-section {
+    padding: 80px 0;
+}
+
+.vm-section-inner {
+    position: relative;
+}
+
+.vm-card-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--medbe-green);
+}
+
+.vm-icon-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(96, 172, 56, 0.12);
+    border: 1px solid rgba(96, 172, 56, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    flex-shrink: 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card-heading {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.vm-heading-accent {
+    color: var(--medbe-green);
+}
+
+.vm-card-body {
+    font-size: 1rem;
+    line-height: 1.78;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 24px;
+}
+
+/* ============================================================
+   VISION CARD
+   ============================================================ */
+.vm-vision-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(96, 172, 56, 0.18);
+    border-radius: 20px;
+    padding: 52px 56px;
+    overflow: hidden;
+    max-width: 860px;
+    margin: 0 auto;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vm-vision-card:hover {
+    border-color: rgba(96, 172, 56, 0.45);
+    box-shadow: 0 0 60px rgba(96, 172, 56, 0.08), 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Ambient glow blob */
+.vm-card-glow {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, rgba(96, 172, 56, 0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+
+.vm-vision-card:hover .vm-card-glow {
+    opacity: 1.5;
+}
+
+/* Floating micro-icons inside vision card */
+.vm-float-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.vm-fi {
+    position: absolute;
+    color: var(--medbe-green);
+    opacity: 0.07;
+    animation: vm-float-fi 14s ease-in-out infinite;
+}
+
+.vm-fi-1 {
+    top: 12%;
+    right: 8%;
+    animation-delay: 0s;
+}
+
+.vm-fi-2 {
+    bottom: 18%;
+    right: 14%;
+    animation-delay: 4s;
+    animation-duration: 18s;
+}
+
+.vm-fi-3 {
+    top: 55%;
+    right: 4%;
+    animation-delay: 7s;
+}
+
+@keyframes vm-float-fi {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Card tag / fact chip */
+.vm-card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--medbe-green);
+    background: rgba(96, 172, 56, 0.07);
+    border: 1px solid rgba(96, 172, 56, 0.2);
+    border-radius: 50px;
+    padding: 7px 16px;
+}
+
+/* ============================================================
+   MISSION SECTION
+   ============================================================ */
+.vm-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.vm-mission-text {
+    padding-top: 8px;
+}
+
+/* Feature cards */
+.vm-mission-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.vm-feat-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    padding: 20px 22px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.vm-feat-card:hover {
+    transform: translateX(6px);
+    border-color: rgba(96, 172, 56, 0.35);
+    box-shadow: 0 4px 24px rgba(96, 172, 56, 0.1);
+}
+
+.vm-feat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(96, 172, 56, 0.1);
+    border: 1px solid rgba(96, 172, 56, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    flex-shrink: 0;
+    transition: background 0.3s ease;
+}
+
+.vm-feat-card:hover .vm-feat-icon {
+    background: rgba(96, 172, 56, 0.18);
+}
+
+.vm-feat-card strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.vm-feat-card p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   CORE VALUES SECTION
+   ============================================================ */
+.vm-values-section {
+    padding-bottom: 100px;
+}
+
+.vm-section-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.vm-section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 14px 0 10px;
+}
+
+.vm-section-sub {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.vm-values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.vm-value-card {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 32px 20px 28px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.vm-value-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--medbe-green);
+    transition: width 0.4s ease;
+}
+
+.vm-value-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(96, 172, 56, 0.4);
+    box-shadow: 0 12px 40px rgba(96, 172, 56, 0.1), 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.vm-value-card:hover::after {
+    width: 100%;
+}
+
+.vm-value-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(96, 172, 56, 0.1);
+    border: 1px solid rgba(96, 172, 56, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    margin: 0 auto 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.vm-value-card:hover .vm-value-icon {
+    background: rgba(96, 172, 56, 0.18);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.vm-value-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.vm-value-card p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* NAP section spacing */
+.vm-nap-section {
+    padding-bottom: 80px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .vm-timeline-track {
+        display: none;
+    }
+
+    .vm-timeline-dot {
+        display: none;
+    }
+
+    .vm-values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vm-dot-mission,
+    .vm-dot-values {
+        top: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .vm-page-header {
+        padding: 120px 0 60px;
+    }
+
+    .vm-vision-card {
+        padding: 32px 24px;
+    }
+
+    .vm-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .vm-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .vm-section {
+        padding: 56px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .vm-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vm-card-heading {
+        font-size: 1.6rem;
+    }
+}
