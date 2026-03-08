@@ -29,17 +29,17 @@
     color: var(--medbe-green);
     position: relative;
     display: inline-block;
-    padding-bottom: 2px;
 }
 
 .brand-db::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -0.1em;
     left: 10%;
     width: 80%;
-    height: 6px;
-    border-bottom: 3px solid var(--medbe-green);
+    height: 0.4em;
+    border: solid var(--medbe-green);
+    border-width: 0 0 0.12em 0;
     border-radius: 50%;
 }
 
