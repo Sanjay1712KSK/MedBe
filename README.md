@@ -91,7 +91,7 @@ This functionality will be implemented once **API access and backend services** 
 
 ## Developer
 
-Developed by **Sanjay K**
+Developed by **Sanjay Kumar S**
 
 This project was built as a **commissioned website for MedBe Pharmacy**.
 
