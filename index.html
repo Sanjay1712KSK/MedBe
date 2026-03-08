@@ -85,20 +85,26 @@
     <!-- Dynamic Navbar -->
     <app-navbar active="home"></app-navbar>
 
-    <!-- Hero Section -->
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
     <section class="hero" id="home">
         <!-- Medical background particles -->
         <div class="med-particles-canvas"></div>
         <div class="container">
+            <!-- Left: Hero copy -->
             <div class="hero-content">
                 <span class="hero-tagline animate-fade-up" style="color: var(--white);">Your One-Stop Destination for
                     <span style="color: var(--medbe-green);">Medicines, Wellness, and Healthcare Needs</span></span>
                 <h1 class="hero-title animate-fade-up delay-100">Me<span class="brand-db">db</span>e
                     Pharmacy</h1>
+                <p class="hero-sub animate-fade-up delay-150"
+                    style="color: var(--medbe-green); font-weight: 600; font-size: 1.1rem; margin-bottom: 24px; letter-spacing: 0.5px;">
+                    Care Beyond Medicine</p>
                 <p class="hero-description animate-fade-up delay-200">
                     Me<span class="brand-db">db</span>e Pharmacy is committed to making healthcare more accessible in
                     Kochi by delivering essential medicines, professional pharmacy guidance, and wellness support
-                    directly to people’s doorsteps. As a leading medical store in Kochi, our goal is to extend pharmacy
+                    directly to people's doorsteps. As a trusted medical store in Kochi, our goal is to extend pharmacy
                     care beyond the counter and ensure every family receives timely medicines, reliable information, and
                     continuous support for better health.
                 </p>
@@ -108,40 +114,63 @@
                 </div>
             </div>
 
-            <div class="hero-visuals">
-                <div class="glass-card hero-card-1 animate-scale-in delay-200">
-                    <div class="glass-card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M10.5 20.5l-6-6a4.6 4.6 0 016.5-6.5l6 6a4.6 4.6 0 01-6.5 6.5z" />
-                            <path d="M14 6L18 10" />
-                            <path d="M6 14L10 18" />
-                        </svg>
+            <!-- Right: 6 Service Cards – two-column staggered layout -->
+            <div class="hero-visuals-6">
+                <!-- Column A -->
+                <div class="hero-col-a">
+                    <div class="glass-card hero-card-sm animate-scale-in delay-200">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M10.5 20.5l-6-6a4.6 4.6 0 016.5-6.5l6 6a4.6 4.6 0 01-6.5 6.5z" />
+                                <path d="M14 6L18 10" />
+                                <path d="M6 14L10 18" />
+                            </svg></div>
+                        <span class="glass-card-text">Authentic Medicines</span>
                     </div>
-                    <span class="glass-card-text">Authentic Medicines</span>
+                    <div class="glass-card hero-card-sm animate-scale-in delay-400">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg></div>
+                        <span class="glass-card-text">Trusted Healthcare</span>
+                    </div>
+                    <div class="glass-card hero-card-sm animate-scale-in delay-300">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="8" y1="12" x2="16" y2="12" />
+                            </svg></div>
+                        <span class="glass-card-text">Health &amp; Wellness</span>
+                    </div>
                 </div>
-
-                <div class="glass-card hero-card-2 animate-scale-in delay-400">
-                    <div class="glass-card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M22 21v-2a4 4 0 00-3-3.87" />
-                            <path d="M16 3.13a4 4 0 010 7.75" />
-                        </svg>
+                <!-- Column B (offset downward) -->
+                <div class="hero-col-b">
+                    <div class="glass-card hero-card-sm animate-scale-in delay-300">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 00-3-3.87" />
+                                <path d="M16 3.13a4 4 0 010 7.75" />
+                            </svg></div>
+                        <span class="glass-card-text">Professional Pharmacists</span>
                     </div>
-                    <span class="glass-card-text">Professional Pharmacists</span>
-                </div>
-
-                <div class="glass-card hero-card-3 animate-scale-in delay-300">
-                    <div class="glass-card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                        </svg>
+                    <div class="glass-card hero-card-sm animate-scale-in delay-500">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="13" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                            </svg></div>
+                        <span class="glass-card-text">Fast Home Delivery</span>
                     </div>
-                    <span class="glass-card-text">Trusted Healthcare</span>
+                    <div class="glass-card hero-card-sm animate-scale-in delay-400">
+                        <div class="glass-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg></div>
+                        <span class="glass-card-text">Customer Support</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,50 +184,64 @@
         <div class="diagonal-divider"></div>
     </section>
 
-    <!-- About Preview Section -->
+    <!-- ============================================================
+         ABOUT PREVIEW SECTION
+         ============================================================ -->
     <section class="about-preview" id="about">
         <div class="container">
+            <!-- Left: styled dark panel matching brand theme -->
             <div class="about-image-wrapper animate-slide-left">
-                <p>Pharmacy Storefront Image</p>
+                <div class="about-brand-content">
+                    <span class="about-brand-tag">MEDBE PHARMACY – KOCHI</span>
+                    <p class="about-brand-lead">Your trusted neighborhood pharmacy dedicated to accessible healthcare.
+                    </p>
+                    <p style="color: rgba(255,255,255,0.55); font-size: 0.95rem; line-height: 1.7; margin-top: 14px;">
+                        Combining professional pharmacy guidance with efficient home delivery, we help patients receive
+                        genuine medicines and trusted healthcare support without leaving their homes.</p>
+
+                    <!-- Mission sequence animation -->
+                    <div class="mission-sequence">
+                        <div class="mission-seq-step">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="10" rx="5" />
+                                <line x1="12" y1="7" x2="12" y2="17" />
+                            </svg>
+                            <span>Medicines</span>
+                        </div>
+                        <div class="mission-seq-arrow">&#8594;</div>
+                        <div class="mission-seq-step">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="13" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                                <line x1="12" y1="12" x2="12" y2="15" />
+                            </svg>
+                            <span>Delivery</span>
+                        </div>
+                        <div class="mission-seq-arrow">&#8594;</div>
+                        <div class="mission-seq-step">
+                            <svg class="heart-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                            <span>Patient Care</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Right: heading, description, NAP -->
             <div class="about-content animate-slide-right delay-200">
                 <h2>Pharmacy Care Beyond the Counter in Kochi</h2>
                 <p>Me<span class="brand-db">db</span>e Pharmacy believes that healthcare should be convenient, reliable,
                     and accessible to everyone in Kochi. By combining professional pharmacy guidance with efficient home
                     delivery services, we help patients receive genuine medicines and trusted healthcare support without
-                    leaving their homes. Our approach focuses on improving health outcomes through patient education,
-                    preventive healthcare awareness, and dependable pharmacy care right here in Ernakulam.</p>
-
-                <!-- Mission sequence animation -->
-                <div class="mission-sequence">
-                    <div class="mission-seq-step">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="7" width="20" height="10" rx="5" />
-                            <line x1="12" y1="7" x2="12" y2="17" />
-                        </svg>
-                        <span>Medicines</span>
-                    </div>
-                    <div class="mission-seq-arrow">&#8594;</div>
-                    <div class="mission-seq-step">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="7" width="20" height="13" rx="2" />
-                            <path d="M16 7V5a2 2 0 0 0-4 0v2" />
-                            <line x1="12" y1="12" x2="12" y2="15" />
-                        </svg>
-                        <span>Delivery</span>
-                    </div>
-                    <div class="mission-seq-arrow">&#8594;</div>
-                    <div class="mission-seq-step">
-                        <svg class="heart-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                        </svg>
-                        <span>Patient Care</span>
-                    </div>
-                </div>
+                    leaving their homes.</p>
+                <p style="margin-top: 16px;">Our approach focuses on improving health outcomes through patient
+                    education, preventive healthcare awareness, and dependable pharmacy care right here in Ernakulam.
+                </p>
 
                 <!-- Local SEO Target: NAP (Name, Address, Phone) Consistency -->
                 <div class="nap-info"
@@ -219,7 +262,9 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- ============================================================
+         SERVICES SECTION – 3×3 grid
+         ============================================================ -->
     <section class="services-section" id="services">
         <!-- Angled top -->
         <div class="diagonal-divider-top"></div>
@@ -230,8 +275,8 @@
                 <p>Comprehensive healthcare solutions and reliable medicines tailored to your needs.</p>
             </div>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
+            <div class="services-grid services-grid-3">
+                <!-- 1 -->
                 <div class="service-card animate-fade-up delay-100">
                     <div class="service-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -244,8 +289,7 @@
                     <h3>Prescription Medicines</h3>
                     <p>Authentic prescription medicines sourced from trusted pharmaceutical distributors.</p>
                 </div>
-
-                <!-- Service 2 -->
+                <!-- 2 -->
                 <div class="service-card animate-fade-up delay-200">
                     <div class="service-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -257,8 +301,7 @@
                     <h3>Over-the-Counter Products</h3>
                     <p>Safe and reliable OTC medicines for common health concerns.</p>
                 </div>
-
-                <!-- Service 3 -->
+                <!-- 3 -->
                 <div class="service-card animate-fade-up delay-300">
                     <div class="service-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -271,9 +314,8 @@
                     <h3>Healthcare Essentials</h3>
                     <p>Vitamins, supplements, and wellness products to support everyday health.</p>
                 </div>
-
-                <!-- Service 4 -->
-                <div class="service-card animate-fade-up delay-400">
+                <!-- 4 -->
+                <div class="service-card animate-fade-up delay-100">
                     <div class="service-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -286,11 +328,74 @@
                     <h3>Pharmacist Guidance</h3>
                     <p>Professional support from trained pharmacists to help patients make informed decisions.</p>
                 </div>
+                <!-- 5 -->
+                <div class="service-card animate-fade-up delay-200">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="13" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                            <line x1="9" y1="17" x2="15" y2="17" />
+                        </svg>
+                    </div>
+                    <h3>Medicine Home Delivery</h3>
+                    <p>Convenient medicine delivery directly to your home across Kochi.</p>
+                </div>
+                <!-- 6 -->
+                <div class="service-card animate-fade-up delay-300">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3>Chronic Care Support</h3>
+                    <p>Medication management for diabetes, hypertension, and long-term conditions.</p>
+                </div>
+                <!-- 7 -->
+                <div class="service-card animate-fade-up delay-100">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Preventive Healthcare Products</h3>
+                    <p>Immunity boosters, vitamins, and wellness supplements for a healthier life.</p>
+                </div>
+                <!-- 8 -->
+                <div class="service-card animate-fade-up delay-200">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Medical Devices</h3>
+                    <p>BP monitors, thermometers, glucose meters, and health monitoring tools.</p>
+                </div>
+                <!-- 9 -->
+                <div class="service-card animate-fade-up delay-300">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="16" x2="12" y2="12" />
+                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                        </svg>
+                    </div>
+                    <h3>Health Consultation Support</h3>
+                    <p>Basic medication and healthcare guidance from our trained pharmacists.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Parallax Statement -->
+    <!-- ============================================================
+         PARALLAX STATEMENT
+         ============================================================ -->
     <section class="parallax-section">
         <div class="med-particles-canvas"></div>
         <div class="container parallax-content animate-fade-up">
@@ -299,7 +404,9 @@
         </div>
     </section>
 
-    <!-- Why Choose Me<span class="brand-db">db</span>e -->
+    <!-- ============================================================
+         WHY CHOOSE MEDBE – 3×2 grid
+         ============================================================ -->
     <section class="why-choose">
         <div class="container">
             <div class="section-header animate-fade-up">
@@ -307,7 +414,7 @@
                 <p>The standard of care you deserve from your local medical store.</p>
             </div>
 
-            <div class="features-grid">
+            <div class="features-grid features-grid-3">
                 <div class="feature-item animate-scale-in delay-100">
                     <div class="feature-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -319,7 +426,6 @@
                     <h3>Trusted Medicines</h3>
                     <p>All medicines are sourced from verified pharmaceutical suppliers.</p>
                 </div>
-
                 <div class="feature-item animate-scale-in delay-200">
                     <div class="feature-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -333,7 +439,6 @@
                     <h3>Professional Support</h3>
                     <p>Friendly pharmacists ready to assist with healthcare advice.</p>
                 </div>
-
                 <div class="feature-item animate-scale-in delay-300">
                     <div class="feature-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -346,8 +451,7 @@
                     <h3>Community Care</h3>
                     <p>Dedicated to improving the health and wellbeing of our local community.</p>
                 </div>
-
-                <div class="feature-item animate-scale-in delay-400">
+                <div class="feature-item animate-scale-in delay-100">
                     <div class="feature-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
@@ -357,20 +461,126 @@
                     <h3>Quality Assurance</h3>
                     <p>Maintaining high standards for medicine storage and safety.</p>
                 </div>
+                <div class="feature-item animate-scale-in delay-200">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="7" width="20" height="13" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                        </svg>
+                    </div>
+                    <h3>Convenient Home Delivery</h3>
+                    <p>Reliable delivery service ensuring patients receive medicines quickly.</p>
+                </div>
+                <div class="feature-item animate-scale-in delay-300">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3>Patient-Focused Service</h3>
+                    <p>Friendly pharmacy staff dedicated to supporting community health.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- ============================================================
+         HOME DELIVERY SECTION
+         ============================================================ -->
+    <section class="delivery-section">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-text animate-slide-left">
+                    <span class="section-label">Doorstep Service</span>
+                    <h2>Healthcare Delivered to Your Doorstep</h2>
+                    <p>Me<span class="brand-db">db</span>e Pharmacy makes accessing medicines easier with efficient home
+                        delivery services across Kochi. Patients can rely on timely delivery of essential medicines and
+                        wellness products without visiting the pharmacy.</p>
+                    <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary" style="margin-top: 20px;">Find Our Location</a>
+                </div>
+                <div class="delivery-icons animate-slide-right delay-200">
+                    <div class="delivery-icon-card">
+                        <div class="delivery-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="13" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                            </svg>
+                        </div>
+                        <span>Order Medicines</span>
+                    </div>
+                    <div class="delivery-arrow">&#8594;</div>
+                    <div class="delivery-icon-card">
+                        <div class="delivery-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="10" rx="5" />
+                                <line x1="12" y1="7" x2="12" y2="17" />
+                            </svg>
+                        </div>
+                        <span>We Pack &amp; Dispatch</span>
+                    </div>
+                    <div class="delivery-arrow">&#8594;</div>
+                    <div class="delivery-icon-card">
+                        <div class="delivery-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <span>Delivered to You</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PATIENT SUPPORT SECTION
+         ============================================================ -->
+    <section class="support-section">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-icon-col animate-scale-in">
+                    <div class="support-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="support-text animate-slide-right delay-200">
+                    <span class="section-label">Expert Guidance</span>
+                    <h2>Guidance You Can Trust</h2>
+                    <p>Our trained pharmacists provide reliable medication guidance, helping patients understand
+                        prescriptions, dosage instructions, and preventive healthcare practices. At Me<span
+                            class="brand-db">db</span>e Pharmacy, we believe that informed patients make better health
+                        decisions.</p>
+                    <a href="about.html" class="btn btn-secondary" style="margin-top: 20px;">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CALL TO ACTION
+         ============================================================ -->
     <section class="cta-section">
         <div class="container cta-content">
-            <h2 class="animate-fade-up">Better Health Starts With Trusted Pharmacy Care</h2>
-            <p class="animate-fade-up delay-100">Experience reliable medicines, professional pharmacy guidance, and
-                convenient healthcare support with Me<span class="brand-db">db</span>e Pharmacy.</p>
+            <h2 class="animate-fade-up">Visit Me<span class="brand-db">db</span>e Pharmacy in Kochi</h2>
+            <p class="animate-fade-up delay-100">Experience trusted medicines, professional pharmacy guidance, and
+                convenient healthcare support.</p>
             <div class="cta-buttons animate-fade-up delay-200">
                 <a href="#contact" class="btn btn-primary">Contact Us</a>
                 <a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-secondary">Find Our Location</a>
+                    class="btn btn-secondary">Get Directions</a>
             </div>
         </div>
     </section>
@@ -382,6 +592,7 @@
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/animations.js"></script>
+
 </body>
 
 </html>

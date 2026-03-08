@@ -606,6 +606,69 @@ ul {
     font-family: var(--font-heading);
 }
 
+/* Brand content inside the about image wrapper */
+.about-brand-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 36px;
+    width: 100%;
+}
+
+.about-brand-tag {
+    display: inline-block;
+    color: var(--medbe-green);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 5px 14px;
+    border: 1px solid rgba(96, 172, 56, 0.4);
+    border-radius: 50px;
+}
+
+.about-brand-lead {
+    font-family: var(--font-heading);
+    font-size: 1.3rem !important;
+    font-weight: 600;
+    color: var(--text-primary) !important;
+    line-height: 1.5;
+    margin-bottom: 12px !important;
+}
+
+/* Mission sequence (Medicines → Delivery → Patient Care) */
+.mission-sequence {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.mission-seq-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--medbe-green);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.mission-seq-step svg {
+    opacity: 0.85;
+}
+
+.mission-seq-arrow {
+    color: rgba(96, 172, 56, 0.5);
+    font-size: 1.4rem;
+    padding-bottom: 16px;
+}
+
 .about-content h2 {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -1030,5 +1093,320 @@ ul {
 
     .inner-header h1 {
         font-size: 2.5rem;
+    }
+}
+
+/* =============================================
+   NEW LAYOUT COMPONENTS – Homepage Expansion
+   ============================================= */
+
+/* ----- Hero: 6-Card Two-Column Layout ----- */
+.hero-visuals-6 {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    position: static;
+}
+
+.hero-col-a,
+.hero-col-b {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.hero-col-b {
+    margin-top: 40px;
+    /* stagger offset */
+}
+
+.hero-card-sm {
+    position: static !important;
+    width: 250px;
+    padding: 16px 20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-col-b .hero-card-sm:nth-child(1) {
+    animation-name: float-delayed;
+    animation-duration: 7s;
+}
+
+.hero-col-b .hero-card-sm:nth-child(2) {
+    animation-name: float;
+    animation-duration: 8.5s;
+}
+
+.hero-col-b .hero-card-sm:nth-child(3) {
+    animation-name: float-delayed;
+    animation-duration: 7.5s;
+}
+
+.hero-col-a .hero-card-sm:nth-child(2) {
+    animation-duration: 7s;
+}
+
+.hero-col-a .hero-card-sm:nth-child(3) {
+    animation-duration: 9s;
+}
+
+.glass-card-text {
+    font-size: 0.95rem;
+}
+
+/* Delay helper for scale-in animations */
+.delay-150 {
+    transition-delay: 150ms;
+}
+
+.delay-600 {
+    transition-delay: 600ms;
+}
+
+/* ----- About: Text Block (replacing image placeholder) ----- */
+.about-text-block {
+    background: rgba(96, 172, 56, 0.04);
+    border: 1px solid rgba(96, 172, 56, 0.15);
+    border-radius: var(--border-radius);
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-text-block::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    border-top: 3px solid var(--medbe-green);
+    border-left: 3px solid var(--medbe-green);
+}
+
+.about-text-block::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-bottom: 3px solid var(--medbe-green);
+    border-right: 3px solid var(--medbe-green);
+}
+
+.about-label {
+    display: inline-block;
+    color: var(--medbe-green);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    padding: 5px 12px;
+    border: 1px solid rgba(96, 172, 56, 0.3);
+    border-radius: 50px;
+}
+
+.about-block-lead {
+    font-size: 1.2rem !important;
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px !important;
+    font-family: var(--font-heading);
+}
+
+/* ----- Services: 3×3 Grid ----- */
+.services-grid-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* ----- Features / Why Choose: 3×2 Grid ----- */
+.features-grid-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* ----- Section Label (small green pill above headings) ----- */
+.section-label {
+    display: inline-block;
+    color: var(--medbe-green);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding: 5px 14px;
+    border: 1px solid rgba(96, 172, 56, 0.3);
+    border-radius: 50px;
+}
+
+/* ----- Home Delivery Section ----- */
+.delivery-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-darker);
+    position: relative;
+}
+
+.delivery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.delivery-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.delivery-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.delivery-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delivery-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.delivery-icon-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(96, 172, 56, 0.08);
+    border: 2px solid rgba(96, 172, 56, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    transition: all 0.35s ease;
+}
+
+.delivery-icon-card:hover .delivery-icon-circle {
+    background: rgba(96, 172, 56, 0.15);
+    border-color: var(--medbe-green);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(96, 172, 56, 0.2);
+}
+
+.delivery-icon-card span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.delivery-arrow {
+    color: rgba(96, 172, 56, 0.4);
+    font-size: 1.6rem;
+    padding-bottom: 28px;
+}
+
+/* ----- Patient Support Section ----- */
+.support-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-black);
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.support-icon-col {
+    display: flex;
+    justify-content: center;
+}
+
+.support-icon-large {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(96, 172, 56, 0.06);
+    border: 2px solid rgba(96, 172, 56, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medbe-green);
+    animation: float 8s ease-in-out infinite;
+    transition: all 0.35s ease;
+}
+
+.support-icon-large:hover {
+    background: rgba(96, 172, 56, 0.12);
+    border-color: var(--medbe-green);
+    box-shadow: 0 0 30px rgba(96, 172, 56, 0.2);
+}
+
+.support-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.support-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ----- Responsive Fixes ----- */
+@media (max-width: 1024px) {
+
+    .services-grid-3,
+    .features-grid-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .hero-visuals-6 {
+        display: none;
+        /* hide on tablets – revert to old layout */
+    }
+
+    .delivery-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-card-sm {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .services-grid-3,
+    .features-grid-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .delivery-icons {
+        justify-content: flex-start;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text-block {
+        padding: 30px 24px;
     }
 }
