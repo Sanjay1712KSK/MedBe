@@ -179,6 +179,37 @@
    ============================================================ */
 @media (max-width: 768px) {
 
+    /* === Mascot Reordering === */
+    .home-delivery-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .home-delivery-left,
+    .home-delivery-right {
+        display: contents !important;
+    }
+
+    .home-delivery-wrapper .section-header {
+        order: 1;
+        margin-bottom: 0 !important;
+    }
+
+    .delivery-mascot {
+        order: 2;
+        margin-bottom: 0 !important;
+    }
+
+    .delivery-features {
+        order: 3;
+    }
+
+    .home-delivery-wrapper .coverage-highlight {
+        order: 4;
+        margin: 0 auto !important;
+    }
+
     /* === Global === */
     :root {
         --section-padding: 60px 0;
