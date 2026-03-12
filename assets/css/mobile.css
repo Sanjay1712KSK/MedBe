@@ -161,7 +161,7 @@
    TABLET – max-width: 992px
    ============================================================ */
 @media (max-width: 992px) {
-    .home-delivery-grid {
+    .home-delivery-wrapper {
         grid-template-columns: 1fr !important;
     }
 
@@ -169,7 +169,7 @@
         grid-template-columns: 1fr !important;
     }
 
-    .feature-cards {
+    .delivery-features {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
@@ -314,7 +314,7 @@
         height: 52px;
     }
 
-    .feature-cards {
+    .delivery-features {
         grid-template-columns: 1fr !important;
         gap: 24px !important;
     }
