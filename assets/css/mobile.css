@@ -158,6 +158,23 @@
 }
 
 /* ============================================================
+   TABLET – max-width: 992px
+   ============================================================ */
+@media (max-width: 992px) {
+    .home-delivery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ============================================================
    MOBILE – max-width: 768px
    ============================================================ */
 @media (max-width: 768px) {
@@ -297,9 +314,14 @@
         height: 52px;
     }
 
-    .service-icon svg {
-        width: 26px;
-        height: 26px;
+    .feature-cards {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
     }
 
     /* === Features / Why Choose === */

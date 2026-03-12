@@ -90,10 +90,16 @@ ul {
 }
 
 .container {
-    max-width: var(--container-width);
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding-left: 24px;
+    padding-right: 24px;
     width: 100%;
+}
+
+section {
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 /* Global Buttons */
@@ -155,9 +161,12 @@ ul {
 }
 
 .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -176,7 +185,8 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 32px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -559,10 +569,7 @@ ul {
 }
 
 .about-preview .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    display: block;
 }
 
 .about-image-wrapper {
@@ -702,6 +709,51 @@ ul {
     gap: 30px;
 }
 
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-cards .service-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px;
+}
+
+.feature-cards .service-icon {
+    margin-bottom: 16px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.step-card {
+    padding: 28px !important;
+    height: 100% !important;
+}
+
+.step-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #60AC38;
+}
+
+.delivery-badge {
+    margin-top: 40px;
+    display: flex !important;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .service-card {
     background: var(--bg-card);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -711,35 +763,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.service-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(96, 172, 56, 0.1);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    color: var(--medbe-green);
-}
-
-.service-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    border-color: rgba(96, 172, 56, 0.6);
-    box-shadow: 0 10px 30px rgba(96, 172, 56, 0.15);
 }
 
 .parallax-section {
