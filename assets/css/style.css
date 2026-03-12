@@ -709,7 +709,7 @@ section {
     gap: 30px;
 }
 
-.home-delivery-wrapper {
+.home-delivery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
