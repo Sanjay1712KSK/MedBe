@@ -552,6 +552,22 @@
    ============================================================ */
 @media (max-width: 768px) {
 
+    /* story.html grid stacking */
+    .story-grid,
+    .ambassador-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+
+    .hexagon-cluster {
+        height: 300px;
+        transform: scale(0.8);
+    }
+
+    .ambassador-image-placeholder {
+        min-height: 300px;
+    }
+
     /* about.html grid stacking */
     .about-grid {
         grid-template-columns: 1fr !important;
@@ -586,5 +602,10 @@
 
     .inner-header h1 {
         font-size: 22px;
+    }
+
+    /* Hide complex hexagon cluster on the smallest screens to save space */
+    .hexagon-cluster {
+        display: none;
     }
 }

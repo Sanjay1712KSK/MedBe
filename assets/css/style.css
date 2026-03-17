@@ -1411,6 +1411,249 @@ section {
     line-height: 1.8;
 }
 
+/* =============================================
+   MEDBE STORY PAGE SPECIFIC
+   ============================================= */
+
+.story-hero {
+    background-color: var(--bg-black);
+    padding: 180px 0 100px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.page-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.honeycomb-pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDQyIDQ0Ij4KPHBhdGggZD0iTTEwLjUgMjFMMSAyNi41bC0uNS0uNXYtMTBMMCAxNXYtMWwxLjUtLjdMMTIgNy4ybDkudCA1LjNMNDIgMTZ2MTFWMTVsLTEwLjUgNS41TDIxIDMybC0xMC41LTUuNXoiIGZpbGw9IiM2MEFDMzgiIGZpbGwtb3BhY2l0eT0iMC4wMyIvPgo8L3N2Zz4=');
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-bee-illustration {
+    margin: 40px auto 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+}
+
+.story-content-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-darker);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-paragraphs p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Hexagon Cluster */
+.hexagon-cluster {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex {
+    position: absolute;
+    width: 140px;
+    height: 160px;
+    background-color: rgba(96, 172, 56, 0.05);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(96, 172, 56, 0.2);
+    transition: all 0.4s ease;
+}
+
+.hex:hover {
+    background-color: rgba(96, 172, 56, 0.15);
+    border-color: var(--medbe-green);
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.hex-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--medbe-green);
+}
+
+.hex-inner span {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hex-1 {
+    top: 50px;
+    left: 15%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hex-2 {
+    top: 120px;
+    right: 15%;
+    animation: float-delayed 7s ease-in-out infinite;
+}
+
+.hex-3 {
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 8s ease-in-out infinite;
+}
+
+/* =============================================
+   DR. DEJ AMBASSADOR SECTION
+   ============================================= */
+
+.ambassador-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-black);
+    position: relative;
+    overflow: hidden;
+}
+
+.ambassador-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ambassador-points {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.point-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.point-item:hover {
+    transform: translateX(10px);
+    border-color: rgba(96, 172, 56, 0.4);
+}
+
+.point-icon-wrap {
+    color: var(--medbe-green);
+    background: rgba(96, 172, 56, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.point-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.point-letter {
+    color: var(--medbe-green);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.point-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.ambassador-closing {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ambassador-closing p {
+    margin-bottom: 5px;
+}
+
+.closing-tagline {
+    color: var(--medbe-green) !important;
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.ambassador-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 2px dashed rgba(96, 172, 56, 0.3);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: var(--font-heading);
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.ambassador-image-placeholder:hover {
+    background: rgba(96, 172, 56, 0.05);
+    border-style: solid;
+    border-color: var(--medbe-green);
+    color: var(--medbe-green);
+}
+
+.placeholder-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+
 /* ----- Responsive Fixes ----- */
 @media (max-width: 1024px) {
 

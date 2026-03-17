@@ -9,6 +9,7 @@ class Navbar extends HTMLElement {
               <div class="container nav-container">
                   <div class="nav-links">
                       <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
+                      <a href="story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
                       <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
                       <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
                       <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
@@ -27,6 +28,7 @@ class Navbar extends HTMLElement {
           <!-- Mobile full-screen menu overlay -->
           <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-modal="true">
               <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
+              <a href="story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
               <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
               <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
               <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
