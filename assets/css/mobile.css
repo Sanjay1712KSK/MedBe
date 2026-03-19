@@ -186,8 +186,8 @@
         gap: 40px !important;
     }
 
-    .home-delivery-left,
-    .home-delivery-right {
+    .home-delivery-wrapper .home-delivery-left,
+    .home-delivery-wrapper .home-delivery-right {
         display: contents !important;
     }
 
@@ -208,6 +208,14 @@
     .home-delivery-wrapper .coverage-highlight {
         order: 4;
         margin: 0 auto !important;
+    }
+
+    .how-it-works-section {
+        order: 5;
+    }
+
+    .visit-store-card {
+        order: 6;
     }
 
     /* === Global === */
@@ -560,8 +568,23 @@
     }
 
     .hexagon-cluster {
-        height: 300px;
-        transform: scale(0.8);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        transform: none;
+        margin-top: 40px;
+    }
+
+    .hex {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        animation: none;
     }
 
     .ambassador-image-placeholder {

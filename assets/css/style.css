@@ -947,7 +947,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
     margin-bottom: var(--section-padding);
 }
 
@@ -1511,13 +1511,13 @@ section {
 
 .hex-1 {
     top: 50px;
-    left: 15%;
+    left: 5%;
     animation: float 6s ease-in-out infinite;
 }
 
 .hex-2 {
     top: 120px;
-    right: 15%;
+    right: 5%;
     animation: float-delayed 7s ease-in-out infinite;
 }
 
