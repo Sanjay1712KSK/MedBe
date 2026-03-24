@@ -2243,7 +2243,29 @@ section {
 @media (max-width: 768px) {
     .footer-bottom {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
-        justify-content: center;
     }
+}
+
+/* ============================================================
+   GLOBAL BACKGROUND UNIFICATION (DOM Overrides)
+   ============================================================ */
+html, body {
+    background-color: var(--bg-black) !important;
+}
+
+/* Strip explicit background styling from major structural elements to ensure 100% transparency over the ambient orbs. */
+section,
+.hero,
+.services-section,
+.about-preview,
+.delivery-section,
+.core-values-section,
+.support-section,
+.reviews-section,
+.about-section,
+.cta-section {
+    background-color: transparent !important;
+    background-image: none !important;
 }
