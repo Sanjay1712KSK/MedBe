@@ -16,9 +16,8 @@
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    /* Layout & Spacing */
     --container-width: 1200px;
-    --section-padding: 100px 0;
+    --section-padding: 80px 0;
 
     /* Borders */
     --border-radius: 12px;
@@ -98,8 +97,8 @@ ul {
 }
 
 section {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 /* Global Buttons */
