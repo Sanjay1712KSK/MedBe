@@ -15,38 +15,7 @@
     min-height: 100vh;
 }
 
-/* Ambient Background Glowing Orbs */
-.ambient-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(120px);
-    z-index: 0;
-    pointer-events: none;
-    animation: orb-drift 20s infinite alternate ease-in-out;
-}
-
-.orb-1 {
-    top: -10%;
-    left: -10%;
-    width: 60vw;
-    height: 60vw;
-    background: var(--blob-green);
-    animation-delay: 0s;
-}
-
-.orb-2 {
-    bottom: 20%;
-    right: -10%;
-    width: 50vw;
-    height: 50vw;
-    background: var(--blob-blue);
-    animation-delay: -10s;
-}
-
-@keyframes orb-drift {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(10%, 10%) scale(1.1); }
-}
+/* Ambient Background Glowing Orbs migrated to style.css for global theme */
 
 /* Blog Hero */
 .blog-hero {

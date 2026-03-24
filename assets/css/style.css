@@ -1772,6 +1772,41 @@ section {
     }
 }
 
+/* ============================================================
+   GLOBAL AMBIENT ORBS THEME
+   ============================================================ */
+.ambient-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    pointer-events: none;
+    animation: orb-drift 20s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: rgba(96, 172, 56, 0.15);
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 45vw;
+    height: 45vw;
+    background: rgba(45, 114, 210, 0.12);
+    animation-delay: -10s;
+}
+
+@keyframes orb-drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(10%, 10%) scale(1.1); }
+}
+
 /* ----- About section brand content improvements ----- */
 .about-brand-desc {
     color: rgba(255, 255, 255, 0.6);
