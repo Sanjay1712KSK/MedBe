@@ -1779,7 +1779,7 @@ section {
     position: fixed;
     border-radius: 50%;
     filter: blur(120px);
-    z-index: -1;
+    z-index: 0;
     pointer-events: none;
     animation: orb-drift 20s infinite alternate ease-in-out;
 }
