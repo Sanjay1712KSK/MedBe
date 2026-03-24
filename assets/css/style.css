@@ -1790,7 +1790,7 @@ section {
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: rgba(96, 172, 56, 0.15);
+    background: rgba(96, 172, 56, 0.20);
     animation-delay: 0s;
 }
 
@@ -1799,8 +1799,13 @@ section {
     right: -10%;
     width: 45vw;
     height: 45vw;
-    background: rgba(45, 114, 210, 0.12);
+    background: rgba(45, 114, 210, 0.15);
     animation-delay: -10s;
+}
+
+/* Perfect Background Sync - Hiding Legacy Assets */
+.med-particles-canvas, .hexagon-cluster {
+    display: none !important;
 }
 
 @keyframes orb-drift {
