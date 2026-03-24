@@ -110,22 +110,24 @@
     margin-right: auto;
 }
 
-/* Premium Glassmorphism Card */
+/* Premium SEO Content Card */
 .blog-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    border-top: 1px solid var(--glass-highlight);
-    border-left: 1px solid var(--glass-highlight);
-    border-radius: 20px;
-    overflow: hidden;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    background: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    transition: 0.3s ease;
     display: flex;
     flex-direction: column;
-    position: relative;
     text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: #00A86B;
+    box-shadow: 0 10px 25px rgba(96, 172, 56, 0.15);
 }
 
 .blog-card::before {
@@ -193,23 +195,28 @@
 }
 
 .blog-card-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: var(--font-heading);
-    margin-bottom: 15px;
+    margin: 15px 0;
     line-height: 1.35;
-    color: var(--white);
+    color: #000;
+}
+
+.blog-card-title a {
+    color: #000;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.blog-card:hover .blog-card-title {
-    color: var(--medbe-green);
+.blog-card:hover .blog-card-title a {
+    color: #00A86B;
 }
 
 .blog-card-excerpt {
-    color: var(--text-secondary);
+    color: #555;
     line-height: 1.6;
-    font-size: 1.05rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 20px;
     flex-grow: 1;
 }
 
@@ -218,8 +225,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eaeaea;
+}
+
+.author {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--medbe-green);
 }
 
 .blog-author {

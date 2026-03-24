@@ -109,8 +109,19 @@ class Footer extends HTMLElement {
                           <h3>Operating Hours</h3>
                           <p>Monday - Saturday:<br>9:00 AM - 11:00 PM</p>
                           <p>Sunday:<br>10:00 AM - 10:00 PM</p>
+                          <p style="margin-top:20px; font-weight:600; color:var(--medbe-green);">Serving Kadavanthra, Kochi and nearby areas</p>
                       </div>
                       <div class="footer-col" style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+                          <h3 style="margin-bottom: 0;">Location Map</h3>
+                          <div class="footer-map" style="width:100%; border-radius:12px; overflow:hidden; margin-bottom:12px;">
+                            <iframe 
+                              src="https://www.google.com/maps?q=Kadavanthra,Kochi&output=embed"
+                              width="100%" 
+                              height="150" 
+                              style="border:0;" 
+                              loading="lazy">
+                            </iframe>
+                          </div>
                           <h3 style="margin-bottom: 0;">Connect With Us</h3>
                           <a href="https://www.instagram.com/medbe_pharmacy/" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram-btn" aria-label="Follow us on Instagram" style="margin-top: 0; width: 44px; height: 44px;">
                               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
