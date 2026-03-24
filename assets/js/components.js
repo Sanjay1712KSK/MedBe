@@ -8,14 +8,15 @@ class Navbar extends HTMLElement {
           <nav class="navbar" id="navbar">
               <div class="container nav-container">
                   <div class="nav-links">
-                      <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
-                      <a href="story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
-                      <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
-                      <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
-                      <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
+                      <a href="/index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
+                      <a href="/story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
+                      <a href="/about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
+                      <a href="/vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
+                      <a href="/blog/index.html" class="${activePage === 'blog' ? 'active' : ''}">Blog</a>
+                      <a href="/index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
                   </div>
-                  <a href="index.html" class="logo" aria-label="MedBe Pharmacy Home">
-                      <img src="logo.png" alt="MedBe Pharmacy Kochi Logo" loading="lazy" width="150" height="50" style="height: 50px; width: auto; object-fit: contain;">
+                  <a href="/index.html" class="logo" aria-label="MedBe Pharmacy Home">
+                      <img src="/logo.png" alt="MedBe Pharmacy Kochi Logo" loading="lazy" width="150" height="50" style="height: 50px; width: auto; object-fit: contain;">
                   </a>
                   <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
                       <span></span>
@@ -27,11 +28,12 @@ class Navbar extends HTMLElement {
 
           <!-- Mobile full-screen menu overlay -->
           <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-modal="true">
-              <a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
-              <a href="story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
-              <a href="about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
-              <a href="vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
-              <a href="index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
+              <a href="/index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a>
+              <a href="/story.html" class="${activePage === 'story' ? 'active' : ''}">MedBe Story</a>
+              <a href="/about.html" class="${activePage === 'about' ? 'active' : ''}">About Us</a>
+              <a href="/vision.html" class="${activePage === 'vision' ? 'active' : ''}">Vision &amp; Mission</a>
+              <a href="/blog/index.html" class="${activePage === 'blog' ? 'active' : ''}">Blog</a>
+              <a href="/index.html#contact" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
           </div>
       `;
 
@@ -86,10 +88,11 @@ class Footer extends HTMLElement {
                       <div class="footer-col">
                           <h3>Quick Links</h3>
                           <ul class="footer-links">
-                              <li><a href="index.html">MedBe Pharmacy Kochi Home</a></li>
-                              <li><a href="about.html">About Our Pharmacy</a></li>
-                              <li><a href="vision.html">Vision & Mission</a></li>
-                              <li><a href="index.html#services">Our Pharmacy Services</a></li>
+                              <li><a href="/index.html">MedBe Pharmacy Kochi Home</a></li>
+                              <li><a href="/about.html">About Our Pharmacy</a></li>
+                              <li><a href="/vision.html">Vision & Mission</a></li>
+                              <li><a href="/index.html#services">Our Pharmacy Services</a></li>
+                              <li><a href="/blog/index.html">Health & Wellness Blog</a></li>
                           </ul>
                       </div>
                       <div class="footer-col" id="contact">
