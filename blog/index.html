@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Read the latest insights on health, wellness, and medicine from MedBe Pharmacy in Kochi.">
-    <title>Blog | MedBe Pharmacy</title>
+    <title>MedBe | Premium Insights & Blog</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
@@ -27,80 +27,111 @@
     <!-- Navbar -->
     <app-navbar active="blog"></app-navbar>
 
-    <!-- Hero -->
-    <header class="blog-hero">
-        <div class="container animate-fade-up">
-            <h1 class="blog-title">Health & Wellness Insights</h1>
-            <p class="blog-subtitle">Expert advice, health tips, and medical knowledge from your trusted pharmacists at Me<span class="brand-db">db</span>e.</p>
-        </div>
-    </header>
+    <div class="blog-main-wrapper">
+        <!-- Ambient Glowing Background Bubbles -->
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
 
-    <!-- Blog Posts Grid -->
-    <main>
-        <div class="blog-grid">
-            
-            <!-- Post Card 1 -->
-            <article class="blog-card animate-scale-in delay-100">
-                <div class="blog-card-image">
-                    <!-- Placeholder using a gradient/solid color for now, can be replaced with real image -->
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #0a0a0a, #1a1a1a); display: flex; align-items: center; justify-content: center;">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--medbe-green)" stroke-width="1.5">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
+        <!-- Hero -->
+        <header class="blog-hero">
+            <div class="container animate-fade-up">
+                <span class="blog-hero-tag">MedBe Editorial</span>
+                <h1 class="blog-title">Insights for a <span>Healthier</span> You.</h1>
+                <p class="blog-subtitle">Dive into expert health tips, modern medical research, and wellness advice deeply curated by our professional pharmacists.</p>
+            </div>
+        </header>
+
+        <!-- Blog Posts Grid -->
+        <main>
+            <div class="blog-grid">
+                
+                <!-- Post Card 1 -->
+                <a href="/blog/the-importance-of-medication-adherence.html" class="blog-card animate-scale-in delay-100">
+                    <div class="blog-card-image">
+                        <span class="blog-category">Wellness Tips</span>
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d59f298830?q=80&w=800&auto=format&fit=crop" alt="Medication Adherence" loading="lazy">
                     </div>
-                </div>
-                <div class="blog-card-content">
-                    <div class="blog-meta">Wellness Tips &bull; <span>Mar 24, 2026</span></div>
-                    <h2 class="blog-card-title"><a href="/blog/the-importance-of-medication-adherence.html">The Importance of Medication Adherence</a></h2>
-                    <p class="blog-card-excerpt">Why taking your prescribed medications exactly as directed is the key to managing long-term health, and how to build better habits.</p>
-                    <a href="/blog/the-importance-of-medication-adherence.html" class="blog-read-more">
-                        Read Article 
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Post Card 2 Placeholder -->
-            <article class="blog-card animate-scale-in delay-200">
-                <div class="blog-card-image">
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #0a0a0a, #1a1a1a); display: flex; align-items: center; justify-content: center;">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--medbe-green)" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="12" y1="8" x2="12" y2="16" />
-                            <line x1="8" y1="12" x2="16" y2="12" />
-                        </svg>
+                    <div class="blog-card-content">
+                        <h2 class="blog-card-title">The Importance of Medication Adherence</h2>
+                        <p class="blog-card-excerpt">Why taking your prescribed medications exactly as directed is the key to managing long-term health, and how to build better habits effectively.</p>
+                        
+                        <div class="blog-card-footer">
+                            <div class="blog-author">
+                                <div class="author-avatar"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=150&auto=format&fit=crop" alt="Dr. Sarah"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Dr. Sanjay K.</span>
+                                    <span class="post-date">Mar 24, 2026</span>
+                                </div>
+                            </div>
+                            <div class="blog-read-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="blog-card-content">
-                    <div class="blog-meta">Nutrition &bull; <span>Mar 18, 2026</span></div>
-                    <h2 class="blog-card-title"><a href="#">Essential Vitamins for Changing Seasons</a></h2>
-                    <p class="blog-card-excerpt">As the weather shifts, keeping your immune system robust is essential. Learn which vitamins provide the best defense.</p>
-                    <span class="blog-read-more" style="color: var(--gray);">Coming Soon</span>
-                </div>
-            </article>
+                </a>
 
-            <!-- Post Card 3 Placeholder -->
-            <article class="blog-card animate-scale-in delay-300">
-                <div class="blog-card-image">
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #0a0a0a, #1a1a1a); display: flex; align-items: center; justify-content: center;">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--medbe-green)" stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg>
+                <!-- Post Card 2 -->
+                <a href="#" class="blog-card animate-scale-in delay-200">
+                    <div class="blog-card-image">
+                        <span class="blog-category">Nutrition</span>
+                        <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=800&auto=format&fit=crop" alt="Vitamins and Nutrition" loading="lazy">
                     </div>
-                </div>
-                <div class="blog-card-content">
-                    <div class="blog-meta">Home Care &bull; <span>Mar 10, 2026</span></div>
-                    <h2 class="blog-card-title"><a href="#">How to Build a Complete First Aid Kit</a></h2>
-                    <p class="blog-card-excerpt">Every home in Kochi needs a well-stocked first aid kit. Here is the definitive checklist from our expert pharmacists.</p>
-                    <span class="blog-read-more" style="color: var(--gray);">Coming Soon</span>
-                </div>
-            </article>
+                    <div class="blog-card-content">
+                        <h2 class="blog-card-title">Essential Vitamins for Changing Seasons</h2>
+                        <p class="blog-card-excerpt">As the weather shifts, keeping your immune system robust is essential. Discover which vital supplements provide the absolute best defense.</p>
+                        
+                        <div class="blog-card-footer">
+                            <div class="blog-author">
+                                <div class="author-avatar"><img src="https://images.unsplash.com/photo-1594824432258-f75f606346ee?q=80&w=150&auto=format&fit=crop" alt="Author"></div>
+                                <div class="author-info">
+                                    <span class="author-name">MedBe Team</span>
+                                    <span class="post-date">Mar 18, 2026</span>
+                                </div>
+                            </div>
+                            <div class="blog-read-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-        </div>
-    </main>
+                <!-- Post Card 3 -->
+                <a href="#" class="blog-card animate-scale-in delay-300">
+                    <div class="blog-card-image">
+                        <span class="blog-category">Home Care</span>
+                        <img src="https://images.unsplash.com/photo-1603555500589-72ed58ce49fb?q=80&w=800&auto=format&fit=crop" alt="First Aid Box" loading="lazy">
+                    </div>
+                    <div class="blog-card-content">
+                        <h2 class="blog-card-title">Building a Complete First Aid Kit at Home</h2>
+                        <p class="blog-card-excerpt">Every home in Kochi needs a well-stocked first aid kit. Here is the definitive checklist generated by our expert pharmacists.</p>
+                        
+                        <div class="blog-card-footer">
+                            <div class="blog-author">
+                                <div class="author-avatar"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=150&auto=format&fit=crop" alt="Author"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Dr. Sanjay K.</span>
+                                    <span class="post-date">Mar 10, 2026</span>
+                                </div>
+                            </div>
+                            <div class="blog-read-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+    </div>
 
     <!-- Footer -->
     <app-footer></app-footer>

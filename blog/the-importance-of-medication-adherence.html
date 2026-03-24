@@ -27,58 +27,83 @@
     <!-- Navbar -->
     <app-navbar active="blog"></app-navbar>
 
-    <!-- Post Header -->
-    <header class="post-header animate-fade-up">
-        <div class="post-meta">Wellness Tips <span>&bull;</span> Mar 24, 2026 <span>&bull;</span> 3 Min Read</div>
-        <h1 class="post-title">The Importance of Medication Adherence</h1>
-    </header>
+    <div class="blog-main-wrapper">
+        <!-- Ambient Glowing Background Bubbles -->
+        <div class="ambient-orb orb-1"></div>
 
-    <!-- Featured Image Placeholder -->
-    <div class="post-featured-image animate-fade-up delay-100">
-        <div style="width: 100%; height: 100%; background: #111; display: flex; align-items: center; justify-content: center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(96, 172, 56, 0.5)" stroke-width="1">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-        </div>
+        <article class="post-layout">
+            <!-- Post Header -->
+            <header class="post-header animate-fade-up">
+                <span class="blog-hero-tag" style="margin-bottom: 24px;">Wellness Tips</span>
+                <h1 class="post-title">The Importance of Medication Adherence</h1>
+                
+                <div class="post-meta-bar">
+                    <div class="meta-item">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=150&auto=format&fit=crop" alt="Dr. Sarah" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                        <span style="color: #fff; font-weight: 500;">Dr. Sanjay K.</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        March 24, 2026
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        4 Min Read
+                    </div>
+                </div>
+            </header>
+
+            <!-- Featured Image -->
+            <div class="post-featured-image animate-fade-up delay-100">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d59f298830?q=80&w=1600&auto=format&fit=crop" alt="Pills and Medication" loading="lazy">
+            </div>
+
+            <!-- Article Content -->
+            <main class="post-content animate-fade-up delay-200">
+                <p>In the medical community, the phrase <strong>"medication adherence"</strong> simply means taking your medications exactly as prescribed by your doctor. While it sounds straightforward, alarming statistics show that nearly 50% of patients do not take their medications as prescribed.</p>
+
+                <p>For chronic conditions such as diabetes, hypertension, or asthma, skipping doses can drastically reduce the effectiveness of the treatment and lead to severe health complications. Here at MedBe Pharmacy, we see the real-world impact of both excellent adherence and poor adherence every single day.</p>
+
+                <h2>Why Patients Skip Medications</h2>
+                <p>There are many completely understandable reasons why people stop taking their medicines prematurely:</p>
+                <ul>
+                    <li><strong>Forgetfulness:</strong> Life gets extremely busy, and it's easy to miss a mid-day pill or lose track of your routine.</li>
+                    <li><strong>Cost Constraints:</strong> Medical expenses can stack up quickly, causing some patients to unintentionally ration their supply.</li>
+                    <li><strong>Feeling Better:</strong> Often, patients feel completely cured and stop taking their antibiotics or blood pressure pills prematurely.</li>
+                    <li><strong>Side Effects:</strong> Mild discomfort or unexpected bodily reactions can strongly deter patients from continuing a long-term prescription.</li>
+                </ul>
+
+                <blockquote>"Drugs don't work in patients who don't actually take them. Your health is the sum of your daily medical habits."</blockquote>
+
+                <h2>Modern Strategies for Better Adherence</h2>
+                <p>If you or a loved one continually struggles to remember to take daily medications on time, try implementing one of these highly-effective modern strategies:</p>
+
+                <h3>1. Leverage Daily Pill Organizers</h3>
+                <p>A weekly pill box with separated compartments for days and times takes the guesswork out of your routine entirely. You only have to sit down and organize your pills once a week!</p>
+
+                <h3>2. Set Digital Reminders & Alerts</h3>
+                <p>Your smartphone is one of the best medical tools you have in your pocket. Set a recurring daily alarm, or use dedicated health applications to rigorously track your medication intake over time.</p>
+
+                <h3>3. Habit Habit Stacking</h3>
+                <p>Take your medicine at the exact same time you do another non-negotiable daily task. For example, place your pill bottle right next to your toothbrush so you remember exactly when brushing your teeth in the morning, or directly beside your coffee machine.</p>
+
+                <h3>4. Opt for Premium Home Delivery</h3>
+                <p>Don't let an empty bottle be the immediate reason you miss critical days of treatment. At MedBe Pharmacy, our Home Delivery service ensures you have a constant, reliably safe supply of your absolute essentials—without ever needing to step out of your house.</p>
+
+                <h2>Always Consult Your Pharmacist</h2>
+                <p>Never stop taking a crucial medication abruptly without consulting a healthcare professional entirely. If you are experiencing concerning side effects or the monthly cost is simply too high, our dedicated pharmacists at MedBe can consult with you, recommend fantastic generic alternatives, or speak directly with your doctor to find a suitable path forward.</p>
+                <p>Your lifelong health journey is a marathon, not a sprint, and we are absolutely here to support you every single step of the way.</p>
+            </main>
+        </article>
     </div>
-
-    <!-- Article Content -->
-    <main class="post-content animate-fade-up delay-200">
-        <p>In the medical community, the phrase "medication adherence" simply means taking your medications exactly as prescribed by your doctor. While it sounds straightforward, statistics show that nearly 50% of patients do not take their medications as prescribed.</p>
-
-        <p>For chronic conditions such as diabetes, hypertension, or asthma, skipping doses can drastically reduce the effectiveness of the treatment and lead to severe health complications. Here at MedBe Pharmacy, we see the real-world impact of both excellent adherence and poor adherence every single day.</p>
-
-        <h2>Why Patients Skip Medications</h2>
-        <p>There are many completely understandable reasons why people stop taking their medicines:</p>
-        <ul>
-            <li><strong>Forgetfulness:</strong> Life gets busy, and it's easy to miss a mid-day pill.</li>
-            <li><strong>Cost:</strong> Medical expenses can stack up, causing some to ration their supply.</li>
-            <li><strong>Feeling better:</strong> Often, patients feel completely cured and stop taking their antibiotics or blood pressure pills prematurely.</li>
-            <li><strong>Side effects:</strong> Mild discomfort can deter patients from continuing a long-term prescription.</li>
-        </ul>
-
-        <blockquote>"Drugs don't work in patients who don't take them." — C. Everett Koop, Former U.S. Surgeon General</blockquote>
-
-        <h2>Strategies for Better Adherence</h2>
-        <p>If you or a loved one struggles to remember to take daily medications, try implementing one of these simple strategies:</p>
-
-        <h3>1. Use Pill Organizers</h3>
-        <p>A weekly pill box with separated compartments for days and times takes the guesswork out of your routine entirely. You only have to organize your pills once a week!</p>
-
-        <h3>2. Set Digital Reminders</h3>
-        <p>Your smartphone is one of the best medical tools you have. Set a recurring daily alarm, or use dedicated health apps to track your medication intake.</p>
-
-        <h3>3. Tie it to a Daily Habit</h3>
-        <p>Take your medicine at the exact same time you do another non-negotiable daily task. For example, right after brushing your teeth in the morning, or right before your morning cup of coffee.</p>
-
-        <h3>4. Opt for Home Delivery</h3>
-        <p>Don't let an empty bottle be the reason you miss days of treatment. At MedBe Pharmacy, our Home Delivery service ensures you have a constant, safe supply of your essentials without needing to step out of the house.</p>
-
-        <h2>Consult Your Pharmacist</h2>
-        <p>Never stop taking a medication abruptly without consulting a healthcare professional entirely. If you are experiencing side effects or the cost is too high, our pharmacists at MedBe can consult with you, recommend generic alternatives, or speak with your doctor.</p>
-        <p>Your health journey is a marathon, not a sprint, and we are here to support you every step of the way.</p>
-    </main>
 
     <!-- Footer -->
     <app-footer></app-footer>
