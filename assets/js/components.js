@@ -95,10 +95,10 @@ class Footer extends HTMLElement {
                       <div class="footer-col" id="contact">
                           <h3>Contact Information</h3>
                           <ul class="footer-links">
-                              <li><a href="mailto:info@medbepharmacy.com">info@medbepharmacy.com</a></li>
+                              <li><a href="mailto:medbephy@gmail.com">medbephy@gmail.com</a></li>
                               <li><a href="https://wa.me/919988443038" target="_blank" rel="noopener noreferrer">WhatsApp: +91 99884 43038</a></li>
                               <li><a href="tel:+919988443038">Call: +91 99 88 44 3038</a></li>
-                              <li><a href="tel:+919988446774">Store: +91 99884 46774</a></li>
+
                               <li><a href="https://maps.app.goo.gl/WDmPuEJdT8tqZ5Nn8" target="_blank" rel="noopener noreferrer" style="line-height:1.5; display:inline-block; margin-top:10px;">Metro Pillar Number : 775, Tharun Tower, G -Floor,<br>Sahodaran Ayyappan Rd, Kochi,<br>Ernakulam, Kerala 682020</a></li>
                           </ul>
                       </div>
